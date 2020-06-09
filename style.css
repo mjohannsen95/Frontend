@@ -61,11 +61,11 @@ a {
 
 
 footer {
-    background-image: url(img/footer.png);
+    background-image: url(img/footer_spitz.png);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 10em;
-    margin: -3em;
+    height: 15em;
+
 }
 
 .FooterLinks {
