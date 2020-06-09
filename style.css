@@ -144,7 +144,6 @@ p {
 a {
     color: #064b7b;
     font-size: 1.2em;
-    font-family: 'Arvo-italic';
     text-decoration: none;
     margin: 1em;
 }
@@ -168,10 +167,10 @@ menu > * {
 .FooterLinks  > a{
 display: flex;
 float: left;
-margin-top: 12em;
+margin-top: 16em;
 justify-content: center;
 color: white;
-font-size: 1em;
+font-size: 0.6em;
  }
 /* roboto-regular - latin */
 @font-face {
