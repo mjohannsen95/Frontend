@@ -4,6 +4,8 @@ body {
     font-family: Roboto;
 }
 
+
+
 img{
     max-width: 100%;
 }
@@ -22,6 +24,67 @@ menu, .FooterLinks {
     z-index: -100;
     position: relative;
 }
+
+form {
+    background-color: #e9f0f7;
+    width: 100%; /* Breite */
+    padding: 1em;
+    border: 1px solid #e9f0f7;
+  
+}
+
+label {
+ 
+    float:left;
+    width: 12em;
+
+    }
+
+legend{
+
+    font-size: 1.5em;
+}
+
+input{
+    
+    width: 20em;
+    border-bottom-color: #064b7b;
+    border-bottom-style: dashed;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+}
+
+
+textarea {
+  width: 300px;
+  border: 2px dashed #064b7b;
+  margin-top: 1em;
+}
+
+fieldset{
+    font-family: Arvo;
+    color: #064b7b;
+    border: 0;
+
+}
+
+fieldset > * {
+    margin-bottom: 1em;
+}
+
+button {
+    background: #cd1719;
+    color: white;
+    border: 0em;
+    padding: 1em;
+    font-weight: 700;
+    
+}
+
+
+
+
 
 .Content {
     margin: 3em;
