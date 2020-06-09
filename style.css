@@ -10,7 +10,7 @@ body {
     display: block;
     margin: -3em;
     padding: 0;
-    word-break: break;
+    object-fit: cover;
 }
 
 .Content {
@@ -60,15 +60,13 @@ footer {
     background-image: url(img/footer.png);
     background-repeat: no-repeat;
     background-size: cover;
-    margin: -3em;
-    margin-top: 3em;
-    padding: 1em;
-    height: 4em;
+    height: 10em;
 }
 
 footer > a {
-    margin: none;
-    margin-bottom: -20em;
+   margin-top: -3em;
+   padding-top: -5em;
+   bottom: 0;
 }
 /* roboto-regular - latin */
 @font-face {
