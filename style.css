@@ -2,19 +2,21 @@
 
 body {
     font-family: Roboto;
-    margin: 3em;
 }
 
-.Header > img {
-    max-width: 1300px;
+.Header > img{
+    max-width: 100%;
+    height: auto;
     display: block;
-    margin: -3em;
-    padding: 0;
+    margin: 0;
     object-fit: cover;
+    z-index: -100;
+    position: relative;
 }
 
 .Content {
-    margin-top: -27em;
+    margin: 3em;
+    margin-top: -30%;
 }
 
 h1 {
@@ -32,25 +34,27 @@ h1 {
 }
 
 .subheader {
-    color: red;
+    color: #cd1719;
     font-size: 3.5rem;
     padding-left: 4.5em;
     margin-top: -0.6em;
 }
 
-q  {
-    font-size: 3em;
-    padding: 2em;
-    border-left-style: solid;
+.Quote  {
+    font-size: 2.5em;
+    margin: 0.3em;
+    padding: 0.5em;
     border-right-style: solid;
-    border-right: 10rem;
-    border-left: 10rem;
-    border-left-color: red;
-    border-right-color: yellowgreen;
+    border-right-width: 0.2em;
+    border-right-color: red;
+    border-left-style: solid;
+    border-left-width: 0.2em;
+    border-left-color: #064b7b;
 }
 
 a {
     color: #e9f0f7;
+    -color: #cd1719;
     padding: 2em;
     text-decoration: none;
 }
@@ -61,9 +65,10 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     height: 10em;
+    margin: -3em;
 }
 
-footer > a {
+.FooterLinks {
    margin-top: -3em;
    padding-top: -5em;
    bottom: 0;
