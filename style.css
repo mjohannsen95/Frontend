@@ -57,10 +57,10 @@ a {
 
 
 footer {
-    background-image: url(img/footer.png);
+    background-image: url(img/footer_spitz.png);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 10em;
+    height: 15em;
 }
 
 footer > a {
