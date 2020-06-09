@@ -10,6 +10,11 @@ img{
     max-width: 100%;
 }
 
+menu, .FooterLinks {
+    font-size: 1.2em;
+    font-family: Arvo;
+}
+
 .Header > img{
     max-width: 100%;
     height: auto;
@@ -86,7 +91,11 @@ button {
     margin-top: -35%;
     height: 100%;
 }
-
+.ContentBlog {
+    margin: 3em;
+    height: 100%;
+    margin-top: 35%;
+}
 h1 {
     font-size: 4em;
     z-index: 0;
@@ -111,6 +120,8 @@ p {
     margin: 0;
 }
 
+
+
 .subheader {
     color: #cd1719;
     font-size: 3.5rem;
@@ -131,14 +142,20 @@ p {
 }
 
 a {
-    color: #e9f0f7;
-    padding: 2em;
+    color: #064b7b;
+    font-size: 1.2em;
+    font-family: 'Arvo-italic';
     text-decoration: none;
+    margin: 1em;
 }
 
 
+menu > * {
+ color: white;
+ padding: 2em;
+}
+
 .FooterLinks {
-   -margin-top: 20%;
    background-image: url(img/footer_spitz.png);
    background-repeat: no-repeat;
    background-size: cover;
@@ -211,7 +228,7 @@ justify-content: center;
     font-family: 'Arvo';
     font-style: italic;
     font-weight: 400;
-    src: url('../fonts/arvo-v13-latin-italic.eot'); /* IE9 Compat Modes */
+    src: url('fonts/arvo-v13-latin-italic.eot'); /* IE9 Compat Modes */
     src: local('Arvo-Italic'),
          url('fonts/arvo-v13-latin-italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
          url('fonts/arvo-v13-latin-italic.woff2') format('woff2'), /* Super Modern Browsers */
