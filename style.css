@@ -217,6 +217,12 @@ nav a {
     height:1px;
     overflow:hidden;
 }
+
+.Intro {
+    font-size: 1em;
+    text-align: center;
+    font-family: Arvo-Italic;
+}
 /* Hier kommen die Mediaqueries */
 
  @media(min-width: 450px) {
