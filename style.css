@@ -6,22 +6,21 @@ body {
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 2.7em;
     color: #e9f0f7;
     text-transform: uppercase;
+    word-break: normal;
 }
 
 h2 {
     color: #cd1719;
-    font-size: 0.8em;
+    font-size: 2em;
     margin-top: 1em;
 }
 
 h1, h2, h3, q {
     font-family: Arvo;
 }
-
-
 
 
 img{
@@ -47,30 +46,12 @@ a:hover {
     background:
        linear-gradient(
         210deg,
-         
          #e9f0f7 5px,
          transparent
        );
   }
 
-/* List Styling */
-dd {
-    padding: 0% 5%;
-    width: 75%
-}
-    
-dt {
-    float: left;
-    padding: 0 1%;
-    width: 20%;
-    margin-top: 0;
-    color: #064b7b;
-    font-family: 'Roboto-Bold', sans-serif;
-}
 
-dl > * {
-    margin: 0.8em;  
-}
 
 /* Formular Styling */
 form {
@@ -84,16 +65,15 @@ form {
 label {
     float:left;
     width: 12em;
-    }
+}
 
 legend {
-
     font-size: 1.5em;
 }
 
 input {
     
-    width: 20em;
+    width: 13em;
     border-bottom-color: #064b7b;
     border-bottom-style: dashed;
     border-top-style: none;
@@ -103,7 +83,7 @@ input {
 
 
 textarea {
-  width: 300px;
+  width: 13em;
   border: 2px dashed #064b7b;
   margin-top: 1em;
 }
@@ -127,6 +107,17 @@ button {
     font-weight: 700;
     
 }
+/* List Styling */
+
+    
+dt {
+    color: #064b7b;
+    font-family: 'Roboto-Bold', sans-serif;
+}
+
+dl > * {
+    margin: 0.8em;  
+}
 /* not-color-changing h1 */
 .Black {
     color: black;
@@ -134,11 +125,11 @@ button {
 
 /* Menu Styling */
 .Menu {
-    background-color: #064b7b;
+    background: linear-gradient(45deg, #064b7b 0%, transparent 100%);
     z-index: 1000;
     position: absolute;
     margin: 0;
-    padding: 2%;
+    padding: 5%;
     width: 100%;
     height: auto;
     top: 0;
@@ -181,7 +172,6 @@ font-size: 0.7em;
 .subheader {
     color: #cd1719;
     font-size: 2em;
-    padding-left: 2.5em;
     margin-top: -0.2em;
 }
 
@@ -211,10 +201,10 @@ font-size: 0.7em;
 .FooterLinks  > a{
     display: flex;
     float: left;
-    margin-top: 17em;
+    margin-top: 23em;
     justify-content: center;
     color: white;
-    font-size:0.8em;
+    font-size:0.6em;
 }
 
 /* Hier kommen die Mediaqueries */
@@ -227,13 +217,42 @@ font-size: 0.7em;
     }
     .subheader {
        font-size: 2em;
-        padding-left: 3.5em;
+        padding-left: 3em;
         margin-top: -0.6em;
     }
 
+        /* List Styling */
+dd {
+    padding: 0% 5%;
+    width: 75%
+}
+    
+dt {
+    float: left;
+    padding: 0 1%;
+    width: 20%;
+    margin-top: 0;
+    color: #064b7b;
+    font-family: 'Roboto-Bold', sans-serif;
+}
 
-@media(min-width: 1000px) {
-   
+dl > * {
+    margin: 0.8em;  
+}
+
+label {
+    width: 8em;
+}
+
+input {
+    width: 20em;
+}
+
+textarea {
+ width: 20em;
+}
+
+@media(min-width: 600px) {
     .Menu > a {
         color: white;
         padding: 2em;
@@ -243,7 +262,21 @@ font-size: 0.7em;
 
     .Menu {
         background-color: transparent;
+        padding: 2%;
     }
+
+    .FooterLinks  > a{
+        display: flex;
+        float: left;
+        margin-top: 17em;
+        justify-content: center;
+        color: white;
+        font-size:0.8em;
+    }
+}
+@media(min-width: 1000px) {
+   
+
 
     .Content {
         margin: 3em;
@@ -265,6 +298,29 @@ font-size: 0.7em;
         font-size: 2.5em;
         margin: 0.3em;
         padding: 0.5em;
+    }
+}
+
+@media(min-width: 1350px) {
+   
+    h1 {
+        font-size: 5em;
+        color: black;
+    }
+
+    .Menu > a {
+        color: white;
+        font-size: 1.5em;
+    }
+
+    .Menu {
+       background: linear-gradient(45deg, #064b7b 0%, transparent 100%);
+    }
+    .subheader {
+        color: #cd1719;
+        font-size: 4rem;
+        padding-left: 4.5em;
+        margin-top: -0.6em;
     }
 }
  /* roboto-regular - latin */
