@@ -4,6 +4,23 @@ body {
     font-family: Roboto;
 }
 
+ dd {
+    padding: 0% 5%;
+    width: 75%
+    }
+    
+    dt {
+    float: left;
+    padding: 0 1%;
+    width: 20%;
+    margin-top: 0;
+    color: #064b7b;
+        font-family: "Roboto-bold";
+}
+dl > * {
+    margin: 0.8em;
+    
+}
 
 
 img{
@@ -200,7 +217,7 @@ font-size: 0.6em;
   }
   /* roboto-700 - latin */
   @font-face {
-    font-family: 'Roboto';
+    font-family: 'Roboto-bold';
     font-style: normal;
     font-weight: 700;
     src: url('fonts/roboto-v20-latin-700.eot'); /* IE9 Compat Modes */
