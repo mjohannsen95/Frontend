@@ -22,17 +22,36 @@ h1, h2, h3, q {
 }
 
 
+
+
 img{
     max-width: 100%;
 }
 
 /* Link Styling */
+
 a {
-    color: #064b7b;
-    font-size: 1.2em;
+    background:
+       linear-gradient(
+         210deg,
+         transparent 5px
+       );
+      background-repeat: repeat-x;
+      background-size: 100%;
+    color: #000;
+    padding: 0.5em;
     text-decoration: none;
-    margin: 1em;
-}
+  }
+
+a:hover {
+    background:
+       linear-gradient(
+        210deg,
+         
+         #e9f0f7 5px,
+         transparent
+       );
+  }
 
 /* List Styling */
 dd {
@@ -313,5 +332,5 @@ font-size: 0.7em;
          url('fonts/arvo-v13-latin-italic.ttf') format('truetype'), /* Safari, Android, iOS */
          url('fonts/arvo-v13-latin-italic.svg#Arvo') format('svg'); /* Legacy iOS */
   }
-
+}
   
