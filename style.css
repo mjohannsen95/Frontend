@@ -1,59 +1,59 @@
-
+/* General Styling */
 
 body {
     font-family: Roboto;
+    margin: 0;
 }
 
- dd {
-    padding: 0% 5%;
-    width: 75%
-    }
-    
-    dt {
-    float: left;
-    padding: 0 1%;
-    width: 20%;
-    margin-top: 0;
-    color: #064b7b;
-        font-family: "Roboto-bold";
+h1 {
+    font-size: 1.5em;
+    color: #e9f0f7;
+    text-transform: uppercase;
 }
-dl > * {
-    margin: 0.8em;
-    
+
+h2 {
+    color: #cd1719;
+    font-size: 0.8em;
+    margin-top: 1em;
 }
+
+h1, h2, h3, q {
+    font-family: Arvo;
+}
+
 
 img{
     max-width: 100%;
 }
 
-.Menu {
-    background-color: #064b7b;
-    z-index: 1000;
-    position: relative;
-    margin: 0;
-    padding: 2%;
+/* Link Styling */
+a {
+    color: #064b7b;
+    font-size: 1.2em;
+    text-decoration: none;
+    margin: 1em;
 }
 
-.Menu > a {
+/* List Styling */
+dd {
+    padding: 0% 5%;
+    width: 75%
+}
     
-font-family: Arvo;
-color: white;
-padding: 0.3em;
-font-size: 0.7em;
+dt {
+    float: left;
+    padding: 0 1%;
+    width: 20%;
+    margin-top: 0;
+    color: #064b7b;
+    font-family: "Roboto-Bold";
 }
 
-.Header > img{
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
-    object-position: 80% 20%;
-    position: right;
-    display: block;
-    margin: 0;
-    z-index: -100;
+dl > * {
+    margin: 0.8em;  
 }
 
-
+/* Formular Styling */
 form {
     background-color: #e9f0f7;
     width: 100%; /* Breite */
@@ -67,12 +67,12 @@ label {
     width: 12em;
     }
 
-legend{
+legend {
 
     font-size: 1.5em;
 }
 
-input{
+input {
     
     width: 20em;
     border-bottom-color: #064b7b;
@@ -89,7 +89,7 @@ textarea {
   margin-top: 1em;
 }
 
-fieldset{
+fieldset {
     font-family: Arvo;
     color: #064b7b;
     border: 0;
@@ -108,38 +108,56 @@ button {
     font-weight: 700;
     
 }
+/* not-color-changing h1 */
+.Black {
+    color: black;
+}
 
+/* Menu Styling */
+.Menu {
+    background-color: #064b7b;
+    z-index: 1000;
+    position: absolute;
+    margin: 0;
+    padding: 2%;
+    width: 100%;
+    height: auto;
+    top: 0;
+}
+
+.Menu > a {
+    
+font-family: Arvo;
+color: white;
+padding: 0.3em;
+font-size: 0.7em;
+}
+
+/* Header Styling */
+.Header > img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: 80% 20%;
+    position: right;
+    display: block;
+    margin: 0;
+    z-index: -100;
+}
+
+/* Content Styling */
 .Content {
     margin: 3em;
     margin-top: -17em;
     height: 100%;
 }
+
+/* Content in Blog Articles Styling */
 .ContentBlog {
     margin: 3em;
     height: 100%;
-    margin-top: 30em;
+    margin-top: 17em;
 }
-
-h2 {
-    color: #cd1719;
-    font-size: 0.8em;
-    margin-top: 1em;
-}
-
-h1, h2, h3, q {
-    font-family: Arvo;
-}
-
-h1 {
-    font-size: 1.5em;
-    color: #e9f0f7;
-    text-transform: uppercase;
-}
-
-p {
-    margin: 0;
-}
-
 
 .subheader {
     color: #cd1719;
@@ -161,14 +179,7 @@ p {
     border-left-color: #064b7b;
 }
 
-a {
-    color: #064b7b;
-    font-size: 1.2em;
-    text-decoration: none;
-    margin: 1em;
-}
-
-
+/* Footer Styling */
 .FooterLinks {
    background-image: url(img/footer_spitz.png);
    background-repeat: no-repeat;
@@ -179,24 +190,25 @@ a {
 }
 
 .FooterLinks  > a{
-display: flex;
-float: left;
-margin-top: 17em;
-justify-content: center;
-color: white;
-font-size:0.8em;
+    display: flex;
+    float: left;
+    margin-top: 17em;
+    justify-content: center;
+    color: white;
+    font-size:0.8em;
+}
 
- }
+/* Hier kommen die Mediaqueries */
+
  @media(min-width: 450px) {
     h1 {
     font-size: 3em;
     }
-
     h2 {
-        font-size: 2em;    
+      font-size: 2em;    
     }
     .subheader {
-        font-size: 2em;
+       font-size: 2em;
         padding-left: 3.5em;
         margin-top: -0.6em;
     }
@@ -212,7 +224,7 @@ font-size:0.8em;
     }
 
     .Menu {
-        background-color: none;
+        background-color: transparent;
     }
 
     h1 {
@@ -263,7 +275,7 @@ font-size:0.8em;
   }
   /* roboto-700 - latin */
   @font-face {
-    font-family: 'Roboto-bold';
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
     src: url('fonts/roboto-v20-latin-700.eot'); /* IE9 Compat Modes */
