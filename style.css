@@ -143,7 +143,6 @@ dl > * {
     
 font-family: Arvo, sans-serif;
 color: white;
-padding: 0.5em;
 font-size: 0.7em;
 }
 
@@ -210,7 +209,14 @@ font-size: 0.7em;
     color: white;
     font-size:0.6em;
 }
-
+.visually-hidden {
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+}
 /* Hier kommen die Mediaqueries */
 
  @media(min-width: 450px) {
@@ -259,14 +265,13 @@ textarea {
 @media(min-width: 600px) {
     .Menu > a {
         color: white;
-        padding: 2em;
         font-size: 1em;
         background-color: none;
     }
 
     .Menu {
         background-color: transparent;
-        padding: 2%;
+        padding: 3%;
     }
 
     .FooterLinks  > a{
