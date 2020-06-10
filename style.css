@@ -1,12 +1,12 @@
 /* General Styling */
 
 body {
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
     margin: 0;
 }
 
 h1 {
-    font-size: 1.5em;
+    font-size: 3em;
     color: #e9f0f7;
     text-transform: uppercase;
 }
@@ -65,7 +65,7 @@ dt {
     width: 20%;
     margin-top: 0;
     color: #064b7b;
-    font-family: "Roboto-Bold";
+    font-family: 'Roboto-Bold', sans-serif;
 }
 
 dl > * {
@@ -166,8 +166,8 @@ font-size: 0.7em;
 
 /* Content Styling */
 .Content {
-    margin: 3em;
-    margin-top: -17em;
+    margin: 2em;
+    margin-top: -10em;
     height: 100%;
 }
 
@@ -181,7 +181,7 @@ font-size: 0.7em;
 .subheader {
     color: #cd1719;
     font-size: 2em;
-    padding-left: 3.5em;
+    padding-left: 2.5em;
     margin-top: -0.2em;
 }
 
@@ -189,7 +189,7 @@ font-size: 0.7em;
     font-size: 1.5em;
     margin: 0.2em;
     padding: 0.3em;
-    color: #e9f0f7;
+    position: relative;
     border-right-style: solid;
     border-right-width: 0.15em;
     border-right-color: red;
@@ -220,9 +220,8 @@ font-size: 0.7em;
 /* Hier kommen die Mediaqueries */
 
  @media(min-width: 450px) {
-    h1 {
-    font-size: 3em;
-    }
+    
+
     h2 {
       font-size: 2em;    
     }
@@ -246,12 +245,15 @@ font-size: 0.7em;
         background-color: transparent;
     }
 
+    .Content {
+        margin: 3em;
+        margin-top: -15em;
+    }
+
     h1 {
         font-size: 4em;
         color: black;
     }
-
-
 
     .subheader {
         color: #cd1719;
@@ -263,7 +265,6 @@ font-size: 0.7em;
         font-size: 2.5em;
         margin: 0.3em;
         padding: 0.5em;
-        color: black;
     }
 }
  /* roboto-regular - latin */
