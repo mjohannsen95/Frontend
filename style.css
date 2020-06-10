@@ -128,22 +128,22 @@ dl > * {
 }
 
 /* Menu Styling */
-.Menu {
+nav {
     background-color: #064a7b60;
     z-index: 1000;
     position: absolute;
     margin: 0;
-    padding:  5% 0 5% 0;
     width: 100%;
     height: auto;
     top: 0;
 }
 
-.Menu > a {
+nav a {
     
-font-family: Arvo, sans-serif;
-color: white;
-font-size: 0.7em;
+    font-family: Arvo, sans-serif;
+    color: white;
+    font-size: 0.7em;
+    float: left;
 }
 
 /* Header Styling */
@@ -263,15 +263,15 @@ textarea {
 }
 
 @media(min-width: 600px) {
-    .Menu > a {
+    nav a {
         color: white;
         font-size: 1em;
         background-color: none;
+        padding: 2em;
     }
 
-    .Menu {
+    nav {
         background-color: transparent;
-        padding: 3%;
     }
 
     .FooterLinks  > a{
@@ -318,12 +318,13 @@ textarea {
         color: black;
     }
 
-    .Menu > a {
+    nav a {
         color: white;
         font-size: 1.5em;
+        padding: 1em;
     }
 
-    .Menu {
+    nav {
         background-color:#064a7b9f;
     }
     .subheader {
