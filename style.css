@@ -125,21 +125,20 @@ dl > * {
 
 /* Menu Styling */
 .Menu {
-    background: linear-gradient(45deg, #064b7b 0%, transparent 100%);
+    background-color: #064a7b60;
     z-index: 1000;
     position: absolute;
     margin: 0;
-    padding: 5%;
+    padding:  5% 0 5% 0;
     width: 100%;
     height: auto;
     top: 0;
 }
 
 .Menu > a {
-    
 font-family: Arvo;
 color: white;
-padding: 0.3em;
+padding: 0.5em;
 font-size: 0.7em;
 }
 
@@ -268,10 +267,11 @@ textarea {
     .FooterLinks  > a{
         display: flex;
         float: left;
-        margin-top: 17em;
+        margin-top: 12em;
+        margin-left: 3em;
         justify-content: center;
         color: white;
-        font-size:0.8em;
+        font-size:1em;
     }
 }
 @media(min-width: 1000px) {
@@ -314,7 +314,7 @@ textarea {
     }
 
     .Menu {
-       background: linear-gradient(45deg, #064b7b 0%, transparent 100%);
+        background-color:#064a7b9f;
     }
     .subheader {
         color: #cd1719;
