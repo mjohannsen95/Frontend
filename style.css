@@ -18,10 +18,12 @@ h2 {
 }
 
 h1, h2, h3, q {
-    font-family: Arvo;
+    font-family: Arvo, sans-serif;
 }
 
-
+ul {
+    list-style-type: none;
+}
 
 
 img{
@@ -109,7 +111,7 @@ textarea {
 }
 
 fieldset {
-    font-family: Arvo;
+    font-family: Arvo, sans-serif;
     color: #064b7b;
     border: 0;
 
@@ -146,7 +148,7 @@ button {
 
 .Menu > a {
     
-font-family: Arvo;
+font-family: Arvo, sans-serif;
 color: white;
 padding: 0.3em;
 font-size: 0.7em;
