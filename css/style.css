@@ -36,7 +36,7 @@ img {
 
 a {
     color: #cd1719;
-    font-family: Arvo;
+    font-family: Arvo, sans-serif;
     padding: 0.5em;
     text-decoration: none;
   }
