@@ -2,6 +2,7 @@
 
 body {
     font-family: Roboto, sans-serif;
+    font-size: 1em;
     margin: 0;
 }
 
@@ -27,21 +28,15 @@ ul {
 }
 
 
-img{
+img {
     max-width: 100%;
 }
 
 /* Link Styling */
 
 a {
-    background:
-       linear-gradient(
-         210deg,
-         transparent 5px
-       );
-      background-repeat: repeat-x;
-      background-size: 100%;
-    color: #000;
+    color: #cd1719;
+    font-family: Arvo;
     padding: 0.5em;
     text-decoration: none;
   }
@@ -49,10 +44,14 @@ a {
 a:hover {
     background:
        linear-gradient(
-        210deg,
+        90deg,
          #e9f0f7 5px,
          transparent
        );
+  }
+
+  nav a:hover {
+    color: #cd1719;
   }
 
 
@@ -273,7 +272,8 @@ textarea {
         color: white;
         font-size: 1em;
         background-color: none;
-        padding: 2em;
+        padding: 1em;
+        margin: 1em;
     }
 
     nav {
