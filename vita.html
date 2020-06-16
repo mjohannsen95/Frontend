@@ -8,23 +8,26 @@
 </head>
 <body>
     <div class="Header">
-        <nav>
-            <h1 class= "visually-hidden">Main Navigation</h1>
+        <nav aria-labelledby="menu">
+            <h1 id ="menu" class= "visually-hidden">Haupt Navigation</h1>
             <ul>
-                <li><a href="index.html">Home &#124; </a></li>
-                <li><a href="racing/index.html">Racing &#124; </a></li>
-                <li><a href="sponsoring.html">Sponsoring &#124; </a></li>
-                <li><a href="vita.html">Vita &#124; </a></li>
-          </ul>
+                  <li><a href="index.html">Home &#124; </a></li>
+                  <li><a href="racing/index.html">Racing &#124; </a></li>
+                  <li><a href="sponsoring.html">Sponsoring &#124; </a></li>
+                  <li><a href="#main">Vita &#124; </a></li>
+            </ul>
          </nav>
         <img src="img/header_vita.png" alt="Porträt von Leif">
     </div>
     
-    <div class="Content">
+    <main id="#main">
        
-        <h1>Über Leif</h1>
-        <h2 class="subheader">Vita</h2>
-        <div class="Quote"><q>Erfolg haben heißt, einmal mehr aufstehen, als man hingefallen ist.-Winston Churchill</q></div>
+        <div class="Titles">
+            <h1>Über Leif</h1>
+            <h2 class="subheader">Vita</h2>
+            <div class="Quote"><q>Erfolg haben heißt, einmal mehr aufstehen, als man hingefallen ist.-Winston Churchill</q></div>
+        </div>
+        
         <dl> 
             <div><dt>Name:</dt><dd>Leif Johannsen</dd></div>
             <div><dt>Geboren:</dt><dd>20.08.1995</dd></div>
@@ -33,15 +36,16 @@
             <div><dt>Beruf:</dt><dd>Studiert Elektrotechnik</dd></div>
             <div><dt>Hobbies:</dt><dd>Wandern, Fotografie, Backen</dd></div>
         </dl>
-        <h2>Leif und der Triathlon</h2>
-        <p>Alles begann vor X Jahren: Ich trat mit dem Triathlon in Kontakt, nachdem ich meine erstes Rennrad erhielt: Nach dem erneuten Verpassen des Busses begann ich mit dem Rennrad zur schule zu fahren und hatte extrem Spaß daran, So wurden die Touren immer größer. Bald folgte auch das Laufen und das Schwimmtraining und ich begann mit dem Training im Verein in Büdelsdorf: SG Athletico. Dann folgte mein efolgreicher erster Wettkampf und ich war nicht mehr zu halten. Daraufhin folgten mehr Rennräder, härteres Training, noch mehr Rennräder,weitere Wettkämpfe und noch mehr Rennräder.</p>
         
-    </div>
-    <div class="FooterLinks">
+        <h2>Leif und der Triathlon</h2>
+        <p>Alles begann vor 10 Jahren: Ich trat mit dem Triathlon in Kontakt, nachdem ich meine erstes Rennrad erhielt: Nach dem erneuten Verpassen des Busses begann ich mit dem Rennrad zur schule zu fahren und hatte extrem Spaß daran, So wurden die Touren immer größer. Bald folgte auch das Laufen und das Schwimmtraining und ich begann mit dem Training im Verein in Büdelsdorf: SG Athletico. Dann folgte mein efolgreicher erster Wettkampf und ich war nicht mehr zu halten. Daraufhin folgten mehr Rennräder, härteres Training, noch mehr Rennräder,weitere Wettkämpfe und noch mehr Rennräder.</p>
+        
+    </main>
+    <footer>
         <a href="impressum.html">Impressum & Datenschutz</a>
         <a href="dokumentation/index.html">Dokumentation</a>
         <a href="dokumentation/zeitstrahl.html">Zeitstrahl</a>
-    </div>
+    </footer>
     
 </body>
 </html>

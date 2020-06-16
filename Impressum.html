@@ -8,20 +8,23 @@
 </head>
 <body>
    <div class="Header">
-      <nav>
-         <h1 class= "visually-hidden">Main Navigation</h1>
+      <nav aria-labelledby="menu">
+         <h1 id ="menu" class= "visually-hidden">Haupt Navigation</h1>
          <ul>
-            <li><a href="index.html">Home &#124; </a></li>
-            <li><a href="racing/index.html">Racing &#124; </a></li>
-            <li><a href="sponsoring.html">Sponsoring &#124; </a></li>
-            <li><a href="vita.html">Vita &#124; </a></li>
-      </ul>
+               <li><a href="index.html">Home &#124; </a></li>
+               <li><a href="racing/index.html">Racing &#124; </a></li>
+               <li><a href="sponsoring.html">Sponsoring &#124; </a></li>
+               <li><a href="vita.html">Vita &#124; </a></li>
+         </ul>
       </nav>
       <img src="img/header_impressum.png" alt="Schlüssel">
    </div>
    
-   <div class="Content">
-      <h1>Impressum und <br> Datenschutz</h1>
+   <main id="#main">
+      <div class="Titles">
+         <h1>Impressum und <br> Datenschutz</h1>
+      </div>
+      
       <h3>Leif Johannsen</h3>
       <ul>
           <li>Achter de Höf 11</li>
@@ -65,19 +68,14 @@
           <h2>Kontakt</h2>
           <p>Sie wollen mit mir in Kontakt treten? </p>
           <img src="img/Fahrradklein.png" alt="Fahrradicon">
-          <a href="sponsoring.html">Zum Kontakt</a>
-         
+          <a href="sponsoring.html">Zum Kontakt</a>   
+         </main>
 
-         
-          
-      
-   </div>
-
-   <div class="FooterLinks">
-      <a href="impressum.html">Impressum & Datenschutz</a>
+   <footer>
+      <a href="#main">Impressum & Datenschutz</a>
       <a href="dokumentation/index.html">Dokumentation</a>
       <a href="dokumentation/zeitstrahl.html">Zeitstrahl</a>
-     </div>
+   </footer>
     
 </body>
 </html>

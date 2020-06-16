@@ -8,37 +8,37 @@
 </head>
 <body>
     <div class="Header">
-        <nav>
-            <h1 class= "visually-hidden">Main Navigation</h1>
+        <nav aria-labelledby="menu">
+            <h1 id ="menu" class= "visually-hidden">Haupt Navigation</h1>
             <ul>
-                <li><a href="index.html">Home &#124; </a></li>
-                <li><a href="racing/index.html">Racing &#124; </a></li>
-                <li><a href="sponsoring.html">Sponsoring &#124; </a></li>
-                <li><a href="vita.html">Vita &#124; </a></li>
-          </ul>
+                  <li><a href="index.html">Home &#124; </a></li>
+                  <li><a href="racing/index.html">Racing &#124; </a></li>
+                  <li><a href="#main">Sponsoring &#124; </a></li>
+                  <li><a href="vita.html">Vita &#124; </a></li>
+            </ul>
          </nav>
         <img src="img/header_sponsoring.png" alt="Header-Sponsoring">
     </div>
 
-    <div class="Content">
+    <main id="#main">
 
-       
-        <h1 lang="en">Become Partners</h1>
-        <h2 class="subheader">Kontakt</h2>
-        <div lang="en" class="Quote"><q>If you can believe it, the mind can achieve it.-Ronnie Lott</q></div>
+        <div class="Titles">
+            <h1 lang="en">Become Partners</h1>
+            <h2 class="subheader">Kontakt</h2>
+            <div lang="en" class="Quote"><q>If you can believe it, the mind can achieve it.-Ronnie Lott</q></div>
+        </div>
 
         <h2>Zusammen arbeiten</h2>
     <ul>
-        <li>
-            <img src="img/logosponsoring.png" alt="Logodruck">
-            <h4>Logodruck</h4>
-            <p>Ihr Logo kann per Druck auf meinem Trikot präsentiert werden.</p>
+        <li class="tile--preview">
+            <img class ="tile-img" src="img/logosponsoring.png" alt="Logodruck">
+            <h4 class="tile-heading">Logodruck</h4>
+            <p class="tile-content">Ihr Logo kann per Druck auf meinem Trikot präsentiert werden.</p>
         </li>
-
-        <li>
-            <img src="img/socialmedia.png" alt="SocialMedia">
-            <h4>Social Media</h4>
-            <p>Werbung Ihres Unternehmens auf verschiedenen Social Media Kanälen.</p>
+        <li class="tile--preview">
+            <img class ="tile-img" src="img/socialmedia.png" alt="SocialMedia">
+            <h4 class="tile-heading">Social Media</h4>
+            <p class="tile-content">Werbung Ihres Unternehmens auf verschiedenen Social Media Kanälen.</p>
         </li>
     </ul>
 
@@ -58,12 +58,12 @@
             <button type="submit">Abschicken</button>
         </fieldset>
     </form>
-    </div>
+</main>
     
-    <div class="FooterLinks">
+    <footer>
         <a href="impressum.html">Impressum & Datenschutz</a>
         <a href="dokumentation/index.html">Dokumentation</a>
         <a href="dokumentation/zeitstrahl.html">Zeitstrahl</a>
-    </div>
+    </footer>
 </body>
 </html>
