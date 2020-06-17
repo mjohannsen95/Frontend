@@ -69,7 +69,6 @@ nav {
   box-sizing: border-box;
 }
 
-
 nav a {
   font-family: Arvo, sans-serif;
   color: white;
@@ -149,7 +148,6 @@ footer {
 }
 
 footer a {
-  display: flex;
   float: left;
   margin-top: 23em;
   justify-content: center;
@@ -158,7 +156,7 @@ footer a {
 }
 
 /* Header Styling */
-.Header > img {
+.Header img {
   width: 100%;
   height: 500px;
   object-fit: cover;
@@ -183,10 +181,6 @@ footer a {
   max-width: 36.2em;
 }
 
-.Blog-Head {
-  color: black;
-}
-
 .Titles {
   margin-top: -10em;
 }
@@ -194,6 +188,37 @@ footer a {
 /* Content in Blog Articles Styling */
 .Blog {
   height: 100%;
+}
+.blog-content {
+    line-height: 1.5em;
+}
+
+.Blog-Intro {
+    font-family: Arvo-Italic;
+    font-size: 1.2em;
+    line-height: 2em;
+    color: #064b7b;
+    text-align: center;
+}
+
+.blog-header {
+    color: black;
+    line-height: 1em;
+  }
+
+.blog-gallery {
+    margin-top: 5em;
+}
+
+.blog-gallery img {
+    margin-top: 2em;
+    border-bottom: 0.5em dashed #064b7b;
+}
+
+.blog-gallery :nth-child(2){
+    margin-top: 2em;
+    border-bottom-color: #cd1719;
+
 }
 
 .subheader {
@@ -356,7 +381,6 @@ nav a:hover {
 
   @media screen and (min-width: 600px) {
     nav a {
-      color: white;
       font-size: 1em;
       background-color: none;
       padding: 1em;
@@ -364,7 +388,7 @@ nav a:hover {
     }
 
     nav {
-        padding-left: 5em;
+      padding-left: 5em;
       background-color: transparent;
     }
 
@@ -375,10 +399,6 @@ nav a:hover {
       margin-left: 3em;
       color: white;
       font-size: 1em;
-    }
-
-    .Titles {
-      margin-top: -15em;
     }
 
     .subheader {
@@ -393,6 +413,15 @@ nav a:hover {
 
   @media screen and (min-width: 800px) {
     /* Background-style-element */
+    .Blog {
+        display: grid;
+        grid-gap: 4em;
+        grid-template-columns:10% 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+          "C A A A B B"
+          "C A A A B B";
+      }
+    }
     .withBackground:after {
       display: block;
       content: "";
@@ -432,6 +461,22 @@ nav a:hover {
       grid-template-areas: "A A A B B B";
     }
 
+    .blog-content {
+        grid-area:  A;
+    }
+
+    .blog-gallery {
+        grid-area: B;
+    }
+
+    .Blog > a {
+        grid-area: C;
+        margin-left: -3em;
+        padding-left: 3em;
+        padding-top: 3em;
+        margin-top: -3em;
+    }
+
     dl {
       grid-area: A;
     }
@@ -447,10 +492,6 @@ nav a:hover {
 
     .Intro {
       grid-area: C;
-      padding: 2em;
-      text-align: center;
-      line-height: 1.5em;
-      font-family: Roboto;
     }
 
     .tile--about {
@@ -499,6 +540,7 @@ nav a:hover {
     .tile-logo {
       grid-area: A;
     }
+
     .tile-socialmedia {
       grid-area: B;
     }
@@ -581,7 +623,6 @@ https://codepen.io/ekscentrysytet/pen/QbNdEB  */
     #tab-reports:checked ~ .tab-reports {
       display: block;
     }
-
     /*Ende Quelle */
   }
 
@@ -615,7 +656,7 @@ https://codepen.io/ekscentrysytet/pen/QbNdEB  */
   }
 
   /****** MEDIA 1350 ******/
-  /****** Bigger Screens, Computers ******/
+  /****** Bigger Screens, laptops ******/
   @media screen and (min-width: 1350px) {
     h1 {
       font-size: 5em;
@@ -638,6 +679,8 @@ https://codepen.io/ekscentrysytet/pen/QbNdEB  */
     }
   }
 
+    /****** MEDIA 2000 ******/
+  /****** Bigger Screens, Computers ******/
   @media screen and (min-width: 2000px) {
     main {
       margin-left: 10em;
@@ -741,4 +784,4 @@ https://codepen.io/ekscentrysytet/pen/QbNdEB  */
       /* Safari, Android, iOS */ url("fonts/arvo-v13-latin-italic.svg#Arvo")
         format("svg"); /* Legacy iOS */
   }
-}
+
