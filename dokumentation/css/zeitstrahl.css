@@ -11,9 +11,6 @@ http://superfriend.ly/
 */
 
 
-/*-------------------------------------------    
-    Fonts     
--------------------------------------------*/
 
 
 
@@ -33,17 +30,22 @@ body:after { content: 'mini'; display: none; }
   -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
  }
 html { font-size: 62.5%; } /* for rems */
-body { font-family: 'Karla', Helvetica, Arial, sans-serif; color: #333; }
+body { font-family: 'Karla', Helvetica, Arial, sans-serif; color: #ff4000; }
 
 
 /* block level */
 
-h1, .h1 { font: bold 4.2rem 'Karla', Helvetica, Arial, sans-serif; margin: 0 0 0.5em; }
-h2, .h2 { font: bold 1.8rem 'Karla', Helvetica, Arial, sans-serif; margin: 0 0 1em; }
+h1, .h1 { font: bold 4.2rem 'Arvo', Helvetica, Arial, sans-serif; margin: 0 0 0.5em; }
+h2, .h2 { font: bold 1.8rem 'Roboto', Helvetica, Arial, sans-serif; margin: 0 0 1em; }
 h3, .h3 { font: bold 1.5rem 'Karla', Helvetica, Arial, sans-serif; margin: 0 0 1em; }
 h4, h5, h6, .h4, .h5, .h6 { font: bold 1.2rem 'Karla', Helvetica, Arial, sans-serif; margin: 0 0 1em; }
 
-p, ul, dl, ol, table { font-size: 1.6rem; margin: 0 0 1.5em; color: #777; }
+p, ul, dl, ol, table { 
+	font-family: 'Roboto' ;
+	font-size: 1.6rem; 
+	margin: 0 0 1.5em; 
+	color: rgb(0, 0, 0); }
+
 ul { margin-left: 20px; font-size: 1.4rem; }
 li { margin: 0 0 0.3em; }
 
@@ -154,4 +156,94 @@ sub, sup { line-height: 0; }
 @media screen and (min-width: 1100px) {
 	.page-header-wrap { width: 385px; }
 
+}
+
+/*-------------------------------------------    
+    Fonts     
+-------------------------------------------*/
+
+ /* roboto-regular - latin */
+ @font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    src: url("fonts/roboto-v20-latin-regular.eot"); /* IE9 Compat Modes */
+    src: local("Roboto"), local("Roboto-Regular"),
+      url("fonts/roboto-v20-latin-regular.eot?#iefix")
+        format("embedded-opentype"),
+      /* IE6-IE8 */ url("fonts/roboto-v20-latin-regular.woff2") format("woff2"),
+      /* Super Modern Browsers */ url("fonts/roboto-v20-latin-regular.woff")
+        format("woff"),
+      /* Modern Browsers */ url("fonts/roboto-v20-latin-regular.ttf")
+        format("truetype"),
+      /* Safari, Android, iOS */
+        url("fonts/roboto-v20-latin-regular.svg#Roboto") format("svg"); /* Legacy iOS */
+  }
+
+  /* roboto-italic - latin */
+@font-face {
+    font-family: "Roboto";
+    font-style: italic;
+    font-weight: 400;
+    src: url("fonts/roboto-v20-latin-italic.eot"); /* IE9 Compat Modes */
+    src: local("Roboto Italic"), local("Roboto-Italic"),
+      url("fonts/roboto-v20-latin-italic.eot?#iefix")
+        format("embedded-opentype"),
+      /* IE6-IE8 */ url("fonts/roboto-v20-latin-italic.woff2") format("woff2"),
+      /* Super Modern Browsers */ url("fonts/roboto-v20-latin-italic.woff")
+        format("woff"),
+      /* Modern Browsers */ url("fonts/roboto-v20-latin-italic.ttf")
+        format("truetype"),
+      /* Safari, Android, iOS */ url("fonts/roboto-v20-latin-italic.svg#Roboto")
+        format("svg"); /* Legacy iOS */
+}
+
+  /* roboto-700 - latin */
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    src: url("fonts/roboto-v20-latin-700.eot"); /* IE9 Compat Modes */
+    src: local("Roboto Bold"), local("Roboto-Bold"),
+      url("fonts/roboto-v20-latin-700.eot?#iefix") format("embedded-opentype"),
+      /* IE6-IE8 */ url("fonts/roboto-v20-latin-700.woff2") format("woff2"),
+      /* Super Modern Browsers */ url("fonts/roboto-v20-latin-700.woff")
+        format("woff"),
+      /* Modern Browsers */ url("fonts/roboto-v20-latin-700.ttf")
+        format("truetype"),
+      /* Safari, Android, iOS */ url("fonts/roboto-v20-latin-700.svg#Roboto")
+        format("svg"); /* Legacy iOS */
+}
+
+@font-face {
+    font-family: "Arvo";
+    font-style: normal;
+    font-weight: 400;
+    src: url("fonts/arvo-v13-latin-regular.eot"); /* IE9 Compat Modes */
+    src: local("Arvo"),
+      url("fonts/arvo-v13-latin-regular.eot?#iefix") format("embedded-opentype"),
+      /* IE6-IE8 */ url("fonts/arvo-v13-latin-regular.woff2") format("woff2"),
+      /* Super Modern Browsers */ url("fonts/arvo-v13-latin-regular.woff")
+        format("woff"),
+      /* Modern Browsers */ url("fonts/arvo-v13-latin-regular.ttf")
+        format("truetype"),
+      /* Safari, Android, iOS */ url("fonts/arvo-v13-latin-regular.svg#Arvo")
+        format("svg"); /* Legacy iOS */
+}
+
+  /* arvo-italic - latin */
+ @font-face {
+    font-family: "Arvo";
+    font-style: italic;
+    font-weight: 400;
+    src: url("fonts/arvo-v13-latin-italic.eot"); /* IE9 Compat Modes */
+    src: local("Arvo-Italic"),
+      url("fonts/arvo-v13-latin-italic.eot?#iefix") format("embedded-opentype"),
+      /* IE6-IE8 */ url("fonts/arvo-v13-latin-italic.woff2") format("woff2"),
+      /* Super Modern Browsers */ url("fonts/arvo-v13-latin-italic.woff")
+        format("woff"),
+      /* Modern Browsers */ url("fonts/arvo-v13-latin-italic.ttf")
+        format("truetype"),
+      /* Safari, Android, iOS */ url("fonts/arvo-v13-latin-italic.svg#Arvo")
+        format("svg"); /* Legacy iOS */
 }
