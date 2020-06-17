@@ -33,6 +33,9 @@ q {
   font-family: Arvo, sans-serif;
 }
 
+h4 {
+  color: #064b7b;
+}
 ul {
   list-style-type: none;
   padding: 0;
@@ -172,9 +175,8 @@ footer a {
   color: white;
   font-family: Arvo;
   font-size: 1.3em;
+  max-width: 36.2em;
 }
-
-
 
 .Blog-Head {
   color: black;
@@ -208,6 +210,14 @@ footer a {
   border-left-width: 0.15em;
   border-left-color: #064b7b;
   text-align: center;
+  width: 80%;
+}
+
+.author {
+  font-size: 0.6em;
+  color: #064b7b;
+  font-family: Arvo-Italic;
+  display: inline;
 }
 
 .visually-hidden {
@@ -226,8 +236,49 @@ footer a {
   text-align: center;
   line-height: 1.5em;
   font-family: Roboto;
+  background: white;
+  border-bottom: 0.3em dashed #064b7b;
+}
+.about {
+  border-left-style: dashed;
+  border-left-width: 0.2em;
+  border-left-color: #064b7b;
+  padding-left: 2em;
+  line-height: 2em;
 }
 
+.tile-socialmedia2 {
+  margin: 1em;
+}
+
+.form-heading {
+  padding-top: 1em;
+  display: block;
+}
+
+.text-heading {
+  position: relative;
+  padding: 0.5em;
+  color: #064b7b;
+  font-family: Arvo;
+  font-size: 1.3em;
+}
+
+.text-content img {
+  float: left;
+  width: 12%;
+  height: auto;
+}
+
+.text-content li {
+  clear: both;
+  display: block;
+  padding: 0.8em;
+}
+
+.text-content a {
+  margin-left: 2em;
+}
 /*Link Effekte*/
 a:hover {
   background: linear-gradient(90deg, #e9f0f7 5px, transparent);
@@ -237,11 +288,11 @@ nav a:hover {
   color: #cd1719;
 }
 .tabbed input {
-    display: none;
+  display: none;
 }
-  
-  .tabbed label {
-    display: none;
+
+.tabbed label {
+  display: none;
 }
 /* =========================================*/
 /* =====Hier kommen die Mediaqueries =======*/
@@ -255,6 +306,7 @@ nav a:hover {
   }
 
   /* List Styling */
+
   dd {
     padding: 0% 5%;
     width: 75%;
@@ -328,13 +380,23 @@ nav a:hover {
       padding-left: 3em;
       margin-top: -0.6em;
     }
-
   }
 
   /****** MEDIA 800 ******/
   /****** Tablets ******/
 
   @media screen and (min-width: 800px) {
+    /* Background-style-element */
+    .withBackground:after {
+      display: block;
+      content: "";
+      width: 100%;
+      height: 25em;
+      background-color: #e9f0f7;
+      margin-top: -56em;
+      background-image: url(../img/Fahrradklein-lightblue.png);
+    }
+
     .wrapperA {
       display: grid;
       grid-gap: 2em;
@@ -342,18 +404,35 @@ nav a:hover {
       grid-template-areas:
         "A A A A A A"
         ". C C C C ."
-        "E E F F G G"
+        "E E F F G G";
     }
 
     .wrapperB {
-        clear: both;
-        display: grid;
-        grid-gap: 2em;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-areas:
-          "A A B B C C"
-          "D D E E F F";;
-      }
+      clear: both;
+      display: grid;
+      grid-gap: 2em;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-areas:
+        "A A B B C C"
+        "D D E E F F"
+        ". G G G G .";
+    }
+
+    .wrapperC {
+      clear: both;
+      display: grid;
+      grid-gap: 2em;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-areas: "A A A B B B";
+    }
+
+    dl {
+      grid-area: A;
+    }
+
+    .about {
+      grid-area: B;
+    }
 
     .Titles {
       margin-top: -10em;
@@ -378,100 +457,129 @@ nav a:hover {
       grid-area: G;
     }
 
-    .disclaimer  {
-        float:left;
-        width: 66%;
+    .disclaimer {
+      float: left;
+      width: 66%;
     }
 
-
     .tile-zwift-2 {
-        grid-area: A;
+      grid-area: A;
     }
 
     .tile-zwift-3 {
-        grid-area: B;
+      grid-area: B;
     }
 
     .tile-EM {
-        grid-area: B;
+      grid-area: B;
     }
 
     .tile-WM {
-        grid-area: C;
+      grid-area: C;
     }
 
     .tile-kanal {
-        grid-area: A;
+      grid-area: A;
     }
 
     .tile-x {
-        grid-area: D
+      grid-area: D;
     }
 
     .tile-y {
-        grid-area: E;
+      grid-area: E;
+    }
+
+    .tile-logo {
+      grid-area: A;
+    }
+    .tile-socialmedia {
+      grid-area: B;
+    }
+
+    form {
+      grid-area: C;
+    }
+
+    .form-heading {
+      grid-area: A;
+      text-align: center;
+    }
+
+    .tile-socialmedia2 {
+      grid-area: C;
+    }
+
+    .siteHead {
+      grid-area: A;
+    }
+
+    .Quote {
+      grid-area: C;
+      margin-left: -3em;
+      margin-right: -3em;
     }
   }
-/****** MEDIA 700 ******/
-@media screen and (min-width: 700px) {
+  /****** MEDIA 700 ******/
+  @media screen and (min-width: 700px) {
     /*===Tabs im Racing===*/
-/*Auf folgender Quelle aufgebaut: 
+    /*Auf folgender Quelle aufgebaut: 
 https://codepen.io/ekscentrysytet/pen/QbNdEB  */
 
-.tabbed {
-    margin-top: 2em;
-  }
+    .tabbed {
+      margin-top: 2em;
+    }
 
-  .tab-heading {
+    .tab-heading {
       display: none;
+    }
+    .tabbed input {
+      display: none;
+    }
+
+    .tabbed label {
+      display: inline-block;
+      padding: 0.5em 0.7em;
+      color: #064b7b;
+      font-family: Arvo;
+      font-size: 2em;
+    }
+
+    .tabbed label:hover {
+      cursor: pointer;
+    }
+
+    .tabbed input:checked + label {
+      position: relative;
+      color: #cd1719;
+      background: #fff;
+      border-bottom: 0.2em dashed #064b7b;
+    }
+    .tabbed input:checked + label:after {
+      display: block;
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    }
+
+    .tab-reports,
+    .tab-coming {
+      display: none;
+      padding: 2em;
+      padding-top: 7em;
+      border: 0.2em solid #e9f0f7;
+    }
+
+    #tab-coming:checked ~ .tab-coming,
+    #tab-reports:checked ~ .tab-reports {
+      display: block;
+    }
+
+    /*Ende Quelle */
   }
-  .tabbed input {
-    display: none;
-  }
-  
-  .tabbed label {
-    display: inline-block;
-    padding: 0.5em 0.7em;
-    color: #064b7b;
-    font-family: Arvo;
-    font-size: 2em;
-  }
-  
-  .tabbed label:hover {
-    cursor: pointer;
-  }
-  
-  .tabbed input:checked + label {
-    position: relative;
-    color: #cd1719;
-    background: #fff;
-    border-bottom: 0.2em dashed #064b7b;
-  }
-  .tabbed input:checked + label:after {
-    display: block;
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-  }
-  
-  .tab-reports,
-  .tab-coming {
-    display: none;
-    padding: 2em;
-    padding-top: 7em;
-    border: 0.2em solid #e9f0f7;
-  }
-  
-  #tab-coming:checked ~ .tab-coming,
-  #tab-reports:checked ~ .tab-reports {
-    display: block;
-  }
-  
-  /*Ende Quelle */
-}
 
   /****** MEDIA 900 ******/
   @media screen and (min-width: 900px) {
@@ -483,6 +591,12 @@ https://codepen.io/ekscentrysytet/pen/QbNdEB  */
       color: black;
     }
 
+    dl {
+      margin-top: 3em;
+      padding: 2em;
+      background-color: #e9f0f7;
+    }
+
     .Quote {
       font-size: 2.5em;
       margin: 0.3em;
@@ -490,6 +604,9 @@ https://codepen.io/ekscentrysytet/pen/QbNdEB  */
     }
     .Titles {
       margin-top: -15em;
+    }
+    .about {
+      margin-left: -7em;
     }
   }
 
@@ -510,6 +627,26 @@ https://codepen.io/ekscentrysytet/pen/QbNdEB  */
 
     nav {
       background-color: #064a7b9f;
+    }
+
+    dl {
+      margin-left: 10em;
+    }
+  }
+
+  @media screen and (min-width: 2000px) {
+    main {
+      margin-left: 10em;
+    }
+
+    .withBackground:after {
+      margin-top: -70em;
+      height: 30em;
+    }
+
+    .about {
+      margin-left: -20em;
+      margin-right: 30em;
     }
   }
 

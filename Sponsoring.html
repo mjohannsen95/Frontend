@@ -1,69 +1,121 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Sponsoring</title>
-</head>
-<body>
+  </head>
+  <body class="withBackground">
     <div class="Header">
-        <nav aria-labelledby="menu">
-            <h1 id ="menu" class= "visually-hidden">Haupt Navigation</h1>
-            <ul>
-                  <li><a href="index.html">Home &#124; </a></li>
-                  <li><a href="racing/index.html">Racing &#124; </a></li>
-                  <li><a href="#main">Sponsoring &#124; </a></li>
-                  <li><a href="vita.html">Vita &#124; </a></li>
-            </ul>
-         </nav>
-        <img src="img/header_sponsoring.png" alt="Header-Sponsoring">
+      <nav aria-labelledby="menu">
+        <h1 id="menu" class="visually-hidden">Haupt Navigation</h1>
+        <ul>
+          <li><a href="index.html">Home &#124; </a></li>
+          <li><a href="racing/index.html">Racing &#124; </a></li>
+          <li><a href="#main">Sponsoring &#124; </a></li>
+          <li><a href="vita.html">Vita &#124; </a></li>
+        </ul>
+      </nav>
+      <img src="img/header_sponsoring.png" alt="Header-Sponsoring" />
     </div>
 
     <main id="#main">
-
-        <div class="Titles">
-            <h1 lang="en">Become Partners</h1>
-            <h2 class="subheader">Kontakt</h2>
-            <div lang="en" class="Quote"><q>If you can believe it, the mind can achieve it.-Ronnie Lott</q></div>
+      <div class="Titles">
+        <h1 lang="en">Become Partners</h1>
+        <h2 class="subheader">Kontakt</h2>
+        <div lang="en" class="Quote">
+          <q>If you can believe it, the mind can achieve it.</q>
+          <p class="author">&mdash; Ronnie Lott</p>
         </div>
+      </div>
 
-        <h2>Zusammen arbeiten</h2>
-    <ul>
-        <li class="tile--preview">
-            <img class ="tile-img" src="img/logosponsoring.png" alt="Logodruck">
+      <h2>Zusammen arbeiten</h2>
+      <ul class="tile--preview">
+        <div class="wrapperB">
+          <li class="tile-logo">
+            <img
+              class="tile-img"
+              src="img/logosponsoring.png"
+              alt="Logodruck"
+            />
             <h4 class="tile-heading">Logodruck</h4>
-            <p class="tile-content">Ihr Logo kann per Druck auf meinem Trikot präsentiert werden.</p>
-        </li>
-        <li class="tile--preview">
-            <img class ="tile-img" src="img/socialmedia.png" alt="SocialMedia">
+            <p class="tile-content">
+              Ihr Logo kann per Druck auf meinem Trikot präsentiert werden.
+            </p>
+          </li>
+          <li class="tile-socialmedia">
+            <img class="tile-img" src="img/socialmedia.png" alt="SocialMedia" />
             <h4 class="tile-heading">Social Media</h4>
-            <p class="tile-content">Werbung Ihres Unternehmens auf verschiedenen Social Media Kanälen.</p>
-        </li>
-    </ul>
+            <p class="tile-content">
+              Werbung Ihres Unternehmens auf verschiedenen Social Media Kanälen.
+            </p>
+          </li>
+          <li class="tile-socialmedia2">
+            <h4 class="text-heading">Instagram&Co</h4>
+            <div class="text-content">
+              <p>Sie können mich hier finden:</p>
+              <ul>
+                <li>
+                  <img src="img/logo-instagram.png" alt="Instagram-Logo" />
+                  <a href="https://www.instagram.com/leif_ur_dream/?hl=de"
+                    >Instagram</a
+                  >
+                </li>
+                <li>
+                  <img src="img/logo-facebook.png" alt="Facebook-Logo" />
+                  <a href="https://www.facebook.com/leif.johannsen1"
+                    >Facebook</a
+                  >
+                </li>
+                <li>
+                  <img src="img/logo-strava.png" alt="Strava-Logo" />
+                  <a href="https://www.strava.com/athletes/7181546">Strava</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </div>
+      </ul>
 
-
-        <h2>In Kontakt treten</h2>
-
-
-    <form id="contactform" action="https://www.inf.fh-flensburg.de/echo/" method="post" accept-charset="utf8">
-        <fieldset>
+      <div class="wrapperA">
+        <h2 class="form-heading">In Kontakt treten</h2>
+        <form
+          id="contactform"
+          action="https://www.inf.fh-flensburg.de/echo/"
+          method="post"
+          accept-charset="utf8"
+        >
+          <fieldset>
             <legend>Persönliche Daten</legend>
 
-            <div><label>Name</label><input name="Name" type="text"/></div>  
-            <div><label>Vorname</label><input name="Vorname" type="text"/></div> 
-            <div><label>E-Mail</label><input name="E-Mail" type="text"/></div> 
-            <div><label>Betreff</label><input name="Betreff" type="text"/></div>  
-            <div><label>Nachricht</label><textarea name="Nachricht" rows="5" cols="50" id="Nachrichtenfeld"></textarea></div> 
+            <div><label>Name</label><input name="Name" type="text" /></div>
+            <div>
+              <label>Vorname</label><input name="Vorname" type="text" />
+            </div>
+            <div><label>E-Mail</label><input name="E-Mail" type="text" /></div>
+            <div>
+              <label>Betreff</label><input name="Betreff" type="text" />
+            </div>
+            <div>
+              <label>Nachricht</label
+              ><textarea
+                name="Nachricht"
+                rows="5"
+                cols="50"
+                id="Nachrichtenfeld"
+              ></textarea>
+            </div>
             <button type="submit">Abschicken</button>
-        </fieldset>
-    </form>
-</main>
-    
+          </fieldset>
+        </form>
+      </div>
+    </main>
+
     <footer>
-        <a href="impressum.html">Impressum & Datenschutz</a>
-        <a href="dokumentation/index.html">Dokumentation</a>
-        <a href="dokumentation/zeitstrahl.html">Zeitstrahl</a>
+      <a href="impressum.html">Impressum & Datenschutz</a>
+      <a href="dokumentation/index.html">Dokumentation</a>
+      <a href="dokumentation/zeitstrahl.html">Zeitstrahl</a>
     </footer>
-</body>
+  </body>
 </html>
