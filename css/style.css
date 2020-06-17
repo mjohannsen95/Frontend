@@ -174,59 +174,7 @@ footer a {
   font-size: 1.3em;
 }
 
-/*===Tabs im Racing===*/
-/*Auf folgender Quelle aufgebaut: 
-https://codepen.io/ekscentrysytet/pen/QbNdEB  */
 
-.tabbed {
-  margin-top: 2em;
-}
-.tabbed input {
-  display: none;
-}
-
-.tabbed label {
-  display: inline-block;
-  padding: 0.5em 0.7em;
-  color: #064b7b;
-  font-family: Arvo;
-  font-size: 2em;
-}
-
-.tabbed label:hover {
-  cursor: pointer;
-}
-
-.tabbed input:checked + label {
-  position: relative;
-  color: #cd1719;
-  background: #fff;
-  border-bottom: 0.2em dashed #064b7b;
-}
-.tabbed input:checked + label:after {
-  display: block;
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-
-.tab-reports,
-.tab-coming {
-  display: none;
-  padding: 2em;
-  padding-top: 7em;
-  border: 5px solid #e9f0f7;
-}
-
-#tab-coming:checked ~ .tab-coming,
-#tab-reports:checked ~ .tab-reports {
-  display: block;
-}
-
-/*Ende Quelle */
 
 .Blog-Head {
   color: black;
@@ -259,6 +207,7 @@ https://codepen.io/ekscentrysytet/pen/QbNdEB  */
   border-left-style: solid;
   border-left-width: 0.15em;
   border-left-color: #064b7b;
+  text-align: center;
 }
 
 .visually-hidden {
@@ -274,7 +223,7 @@ https://codepen.io/ekscentrysytet/pen/QbNdEB  */
   font-size: 1em;
   text-align: left;
   padding: 2em;
-  text-align: left;
+  text-align: center;
   line-height: 1.5em;
   font-family: Roboto;
 }
@@ -287,7 +236,13 @@ a:hover {
 nav a:hover {
   color: #cd1719;
 }
-
+.tabbed input {
+    display: none;
+}
+  
+  .tabbed label {
+    display: none;
+}
 /* =========================================*/
 /* =====Hier kommen die Mediaqueries =======*/
 /* =========================================*/
@@ -373,35 +328,42 @@ nav a:hover {
       padding-left: 3em;
       margin-top: -0.6em;
     }
+
   }
 
   /****** MEDIA 800 ******/
   /****** Tablets ******/
 
   @media screen and (min-width: 800px) {
-    main {
-      -display: grid;
+    .wrapperA {
+      display: grid;
       grid-gap: 2em;
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
       grid-template-areas:
         "A A A A A A"
-        "C C C D D D"
-        "E E F F G G";
+        ". C C C C ."
+        "E E F F G G"
     }
+
+    .wrapperB {
+        clear: both;
+        display: grid;
+        grid-gap: 2em;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+          "A A B B C C"
+          "D D E E F F";;
+      }
+
     .Titles {
       margin-top: -10em;
       grid-area: A;
     }
 
-    .Quote {
-      grid-area: D;
-      text-align: left;
-    }
-
     .Intro {
       grid-area: C;
       padding: 2em;
-      text-align: left;
+      text-align: center;
       line-height: 1.5em;
       font-family: Roboto;
     }
@@ -415,7 +377,101 @@ nav a:hover {
     .tile--contact {
       grid-area: G;
     }
+
+    .disclaimer  {
+        float:left;
+        width: 66%;
+    }
+
+
+    .tile-zwift-2 {
+        grid-area: A;
+    }
+
+    .tile-zwift-3 {
+        grid-area: B;
+    }
+
+    .tile-EM {
+        grid-area: B;
+    }
+
+    .tile-WM {
+        grid-area: C;
+    }
+
+    .tile-kanal {
+        grid-area: A;
+    }
+
+    .tile-x {
+        grid-area: D
+    }
+
+    .tile-y {
+        grid-area: E;
+    }
   }
+/****** MEDIA 700 ******/
+@media screen and (min-width: 700px) {
+    /*===Tabs im Racing===*/
+/*Auf folgender Quelle aufgebaut: 
+https://codepen.io/ekscentrysytet/pen/QbNdEB  */
+
+.tabbed {
+    margin-top: 2em;
+  }
+
+  .tab-heading {
+      display: none;
+  }
+  .tabbed input {
+    display: none;
+  }
+  
+  .tabbed label {
+    display: inline-block;
+    padding: 0.5em 0.7em;
+    color: #064b7b;
+    font-family: Arvo;
+    font-size: 2em;
+  }
+  
+  .tabbed label:hover {
+    cursor: pointer;
+  }
+  
+  .tabbed input:checked + label {
+    position: relative;
+    color: #cd1719;
+    background: #fff;
+    border-bottom: 0.2em dashed #064b7b;
+  }
+  .tabbed input:checked + label:after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .tab-reports,
+  .tab-coming {
+    display: none;
+    padding: 2em;
+    padding-top: 7em;
+    border: 0.2em solid #e9f0f7;
+  }
+  
+  #tab-coming:checked ~ .tab-coming,
+  #tab-reports:checked ~ .tab-reports {
+    display: block;
+  }
+  
+  /*Ende Quelle */
+}
 
   /****** MEDIA 900 ******/
   @media screen and (min-width: 900px) {
