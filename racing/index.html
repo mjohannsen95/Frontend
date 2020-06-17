@@ -1,144 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
     <title>Racing</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="Header">
-        <nav aria-labelledby="menu">
-            <h1 id ="menu" class= "visually-hidden">Haupt Navigation</h1>
-            <ul>
-                  <li><a href="../index.html">Home &#124; </a></li>
-                  <li><a href="#main">Racing &#124; </a></li>
-                  <li><a href="../sponsoring.html">Sponsoring &#124; </a></li>
-                  <li><a href="../vita.html">Vita &#124; </a></li>
-            </ul>
-         </nav>
-        <img src="../img/header_racing.png" alt="Leif auf dem Rennrad">        
+      <nav aria-labelledby="menu">
+        <h1 id="menu" class="visually-hidden">Haupt Navigation</h1>
+        <ul>
+          <li><a href="../index.html">Home &#124; </a></li>
+          <li><a href="#main">Racing &#124; </a></li>
+          <li><a href="../sponsoring.html">Sponsoring &#124; </a></li>
+          <li><a href="../vita.html">Vita &#124; </a></li>
+        </ul>
+      </nav>
+      <img src="../img/header_racing.png" alt="Leif auf dem Rennrad" />
     </div>
-    
+
     <main id="#main">
-        <div class="Titles">
-            <h1 lang="en">Let's Go Race!</h1>
-            <h2 class="subheader">Events</h2>
-            <div lang="en" class="Quote"><q>Believe me, the reward is not so great without the struggle.-Wilma Rudolph</q></div>            
+      <div class="Titles">
+        <h1 lang="en">Let's Go Race!</h1>
+        <h2 class="subheader">Events</h2>
+        <div lang="en" class="Quote">
+          <q>Believe me, the reward is not so great without the struggle.</q>
+          <p class="author">&mdash; Wilma Rudolph</p>
+        </div>
+      </div>
+
+      <div class="tabbed">
+        <input type="radio" id="tab-coming" name="tabs" checked />
+        <label for="tab-coming">Coming Races</label>
+        <input type="radio" id="tab-reports" name="tabs" />
+        <label for="tab-reports">Race Reports</label>
+
+        <div class="tab-coming">
+          <h2 class="tab-heading">Coming Races</h2>
+          <div class="disclaimer">
+            <p>
+              Hier finden Sie eine Übersicht über meine kommenden
+              Veranstaltungen
+            </p>
+            <h3>Über die derzeitige Situation</h3>
+            <p>
+              Aufgrund der aktuellen Lage sind diese Saison wahrscheinlich keine
+              Wettkämpfe möglich, genauso fällt das Gruppentraining nur in
+              beschränkter Form stattfinden können. Sobald es mehr Informationen
+              gibt, werden die kommenden Veranstaltungen auf dieser Seite wieder
+              gezeigt. Ich nutze die Zeit natürlich trotzdem um an der frischen
+              Luft im Wasser und auf der Straße zu trainieren um für die nächste
+              Saison gut oder vielleicht sogar besser gewappnet zu sein.
+            </p>
+            <p>Stay healthy!</p>
+          </div>
+
+          <ul class="tile--preview">
+            <div class="wrapperB">
+              <li class="tile-zwift-3">
+                <img
+                  class="tile-img"
+                  src="../img/zwift.png"
+                  alt="Veranstaltungsteaser Zwift Race"
+                />>
+                <h3 class="tile-heading">Zwift Race Bundesliga #2</h3>
+                <div class="tile-content">
+                  <h4>12.07.2020<br />Online</h4>
+                  <p>
+                    Das zweite Zwift Race steht an! Begleiten Sie mich auf der
+                    Strecke!
+                  </p>
+                  <a href="detailbericht-a.html">Zur Veranstaltung</a>
+                </div>
+              </li>
+
+              <li class="tile-zwift-2">
+                <img
+                  class="tile-img"
+                  src="../img/zwift.png"
+                  alt="Veranstaltungsteaser Zwift Race"
+                />>
+                <h3 class="tile-heading">Zwift Race Bundesliga #2</h3>
+                <div class="tile-content">
+                  <h4>12.07.2020<br />Online</h4>
+                  <p>
+                    Das dritte Zwift Race steht an! Begleiten Sie mich auf der
+                    Strecke!
+                  </p>
+                  <a href="detailbericht-a.html">Zur Veranstaltung</a>
+                </div>
+              </li>
+            </div>
+          </ul>
         </div>
 
-        <div class="tabbed">
-            <input type = "radio" id = "tab-coming" name = "tabs" checked>
-            <label for = "tab-coming">Coming Races</label>
-            <input type = "radio" id = "tab-reports" name = "tabs">
-            <label for = "tab-reports">Race Reports</label>
-    
-            <div class="tab-coming">
-               
-                    <h2 class=tab-heading>Coming Races</h2>
-                    <div class="disclaimer">
-                        <p>Hier finden Sie eine Übersicht über meine kommenden Veranstaltungen</p>
-                        <h3>Über die derzeitige Situation</h3>
-                        <p>Aufgrund der aktuellen Lage sind diese Saison wahrscheinlich keine Wettkämpfe möglich, genauso fällt das Gruppentraining nur in beschränkter Form stattfinden können. Sobald es mehr Informationen gibt, werden die kommenden Veranstaltungen auf dieser Seite wieder gezeigt. Ich nutze die Zeit natürlich trotzdem um an der frischen Luft im Wasser und auf der Straße zu trainieren um für die nächste Saison gut oder vielleicht sogar besser gewappnet zu sein.</p>
-                        <p>Stay healthy!</p>
-                    </div>
-
-                    <ul class="tile--preview">
-                        <div class="wrapperB">
-                        <li class="tile-zwift-3">
-                            <img class ="tile-img" src="../img/zwift.png" alt="Veranstaltungsteaser Zwift Race">>
-                            <h3 class="tile-heading">Zwift Race Bundesliga #2</h3>
-                            <div class="tile-content">
-                                <h4>12.07.2020<br>Online</h4>
-                                <p>Das zweite Zwift Race steht an! Begleiten Sie mich auf der Strecke!</p>
-                                <a href="detailbericht-a.html">Zur Veranstaltung</a>
-                            </div> 
-                        </li>
-            
-                        <li class="tile-zwift-2">
-                            <img class ="tile-img" src="../img/zwift.png" alt="Veranstaltungsteaser Zwift Race">>
-                            <h3 class="tile-heading">Zwift Race Bundesliga #2</h3>
-                            <div class="tile-content">
-                                <h4>12.07.2020<br>Online</h4>
-                                <p>Das dritte Zwift Race steht an! Begleiten Sie mich auf der Strecke!</p>
-                                <a href="detailbericht-a.html">Zur Veranstaltung</a>
-                            </div> 
-                        </li>
-                    </div>
-                    </ul>
-                </div>
-                
-                
-            
-    
         <div class="tab-reports">
-            <div class="wrapper">
-                <h2 class=tab-heading>Race Reports</h2>
-                <ul class="tile--preview">
-                    <div class=wrapperB>
-                        <li class="tile-kanal">
-                            <img class ="tile-img" src="../img/schiff.png" alt="Triathleten im Wasser vor einem Schiff">>
-                            <h3 class="tile-heading">Kanaltriathlon</h3>
-                            <div class="tile-content">
-                                <h4>29.11.2019<br>Rendsburg</h4>
-                                <p>Beim Kanaltriathlon in der Heimat gebe ich wieder alles.</p>
-                                <a href="detailbericht-a.html">Mehr lesen</a>
-                            </div> 
-                        </li>
-                      
-                        <li class="tile-EM">
-                            <img class ="tile-img" src="../img/EM.png" alt="Leif steht mit Zeitrad vor Palmen">
-                            <h3 class="tile-heading">Europameisterschaften</h3>
-                            <div class="tile-content">
-                                <h4>22.07.2019<br>Weert</h4>
-                                <p>Die Europameisterschaften in Weert, Niederlande sind ein besonderes Highlight dieses Jahr.</p>
-                                <a href="detailbericht-b.html">Mehr</a>
-                            </div> 
-                        </li>
-                                      
-                    <li class="tile-WM">
-                        <img class ="tile-img" src="../img/WM.png" alt="Leif steht mit Zeitrad vor Palmen">
-                        <h3 class="tile-heading">Weltmeisterschaften</h3>
-                        <div class="tile-content">
-                            <h4>28.02.2019<br>Lausanne</h4>
-                            <p>In Lausanne, Schweiz kommt es zu einer der größten Herausforderungen meiner Saison.</p>
-                            <a href="detailbericht-a.html">Mehr</a>
-                        </div> 
-                    </li>
-        
-                    <li class="tile-x">
-                        <img class ="tile-img" src="../img/WM.png" alt="Leif steht mit Zeitrad vor Palmen">
-                        <h3 class="tile-heading">Weitere VA</h3>
-                        <div class="tile-content">
-                            <h4>28.02.2019<br>Lausanne</h4>
-                            <p>In Lausanne, Schweiz kommt es zu einer der größten Herausforderungen meiner Saison.</p>
-                            <a href="detailbericht-a.html">Mehr</a>
-                        </div> 
-                    </li>
-        
-                    <li class="tile-y">
-                        <img class ="tile-img" src="../img/WM.png" alt="Leif steht mit Zeitrad vor Palmen">
-                        <h3 class="tile-heading">Weitere VA</h3>
-                        <div class="tile-content">
-                            <h4>28.02.2019<br>Lausanne</h4>
-                            <p>In Lausanne, Schweiz kommt es zu einer der größten Herausforderungen meiner Saison.</p>
-                            <a href="detailbericht-a.html">Mehr</a>
-                        </div> 
-                    </li>
-                </div>
-                </ul>
-            </div>
-            </div>
- 
-    </div>
+          <div class="wrapper">
+            <h2 class="tab-heading">Race Reports</h2>
+            <ul class="tile--preview">
+              <div class="wrapperB">
+                <li class="tile-kanal">
+                  <img
+                    class="tile-img"
+                    src="../img/schiff.png"
+                    alt="Triathleten im Wasser vor einem Schiff"
+                  />>
+                  <h3 class="tile-heading">Kanaltriathlon</h3>
+                  <div class="tile-content">
+                    <h4>29.11.2019<br />Rendsburg</h4>
+                    <p>
+                      Beim Kanaltriathlon in der Heimat gebe ich wieder alles.
+                    </p>
+                    <a href="detailbericht-a.html">Mehr lesen</a>
+                  </div>
+                </li>
+
+                <li class="tile-EM">
+                  <img
+                    class="tile-img"
+                    src="../img/EM.png"
+                    alt="Leif steht mit Zeitrad vor Palmen"
+                  />
+                  <h3 class="tile-heading">Europameisterschaften</h3>
+                  <div class="tile-content">
+                    <h4>22.07.2019<br />Weert</h4>
+                    <p>
+                      Die Europameisterschaften in Weert, Niederlande sind ein
+                      besonderes Highlight dieses Jahr.
+                    </p>
+                    <a href="detailbericht-b.html">Mehr</a>
+                  </div>
+                </li>
+
+                <li class="tile-WM">
+                  <img
+                    class="tile-img"
+                    src="../img/WM.png"
+                    alt="Leif steht mit Zeitrad vor Palmen"
+                  />
+                  <h3 class="tile-heading">Weltmeisterschaften</h3>
+                  <div class="tile-content">
+                    <h4>28.02.2019<br />Lausanne</h4>
+                    <p>
+                      In Lausanne, Schweiz kommt es zu einer der größten
+                      Herausforderungen meiner Saison.
+                    </p>
+                    <a href="detailbericht-a.html">Mehr</a>
+                  </div>
+                </li>
+
+                <li class="tile-x">
+                  <img
+                    class="tile-img"
+                    src="../img/WM.png"
+                    alt="Leif steht mit Zeitrad vor Palmen"
+                  />
+                  <h3 class="tile-heading">Weitere VA</h3>
+                  <div class="tile-content">
+                    <h4>28.02.2019<br />Lausanne</h4>
+                    <p>
+                      In Lausanne, Schweiz kommt es zu einer der größten
+                      Herausforderungen meiner Saison.
+                    </p>
+                    <a href="detailbericht-a.html">Mehr</a>
+                  </div>
+                </li>
+
+                <li class="tile-y">
+                  <img
+                    class="tile-img"
+                    src="../img/WM.png"
+                    alt="Leif steht mit Zeitrad vor Palmen"
+                  />
+                  <h3 class="tile-heading">Weitere VA</h3>
+                  <div class="tile-content">
+                    <h4>28.02.2019<br />Lausanne</h4>
+                    <p>
+                      In Lausanne, Schweiz kommt es zu einer der größten
+                      Herausforderungen meiner Saison.
+                    </p>
+                    <a href="detailbericht-a.html">Mehr</a>
+                  </div>
+                </li>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
     </main>
 
-        
-    
     <footer>
-        <a href="../impressum.html">Impressum & Datenschutz</a>
-        <a href="../dokumentation/index.html">Dokumentation</a>
-        <a href="../dokumentation/zeitstrahl.html">Zeitstrahl</a>
+      <a href="../impressum.html">Impressum & Datenschutz</a>
+      <a href="../dokumentation/index.html">Dokumentation</a>
+      <a href="../dokumentation/zeitstrahl.html">Zeitstrahl</a>
     </footer>
-</body>
+  </body>
 </html>
