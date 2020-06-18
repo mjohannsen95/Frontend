@@ -45,6 +45,7 @@ ul {
 
 img {
   max-width: 100%;
+
 }
 
 /* Link Styling */
@@ -128,6 +129,10 @@ button {
 }
 
 /* DL List Styling */
+dl {
+margin: 3em;
+}
+
 dt {
   color: #064b7b;
   font-family: "Roboto-Bold", sans-serif;
@@ -156,7 +161,7 @@ footer a {
 }
 
 /* Header Styling */
-.Header img {
+.header img {
   width: 100%;
   height: 500px;
   object-fit: cover;
@@ -165,7 +170,12 @@ footer a {
   margin: 0;
   z-index: -100;
 }
-
+.tile--preview img {
+    margin-top: 2em; 
+}
+.tile--preview img:hover {
+    transform: skewX(-3deg);
+}
 /* Tile Styling */
 .tile--preview {
   margin-top: 2em;
@@ -181,24 +191,24 @@ footer a {
   max-width: 36.2em;
 }
 
-.Titles {
+.titles {
   margin-top: -10em;
 }
 
 /* Content in Blog Articles Styling */
-.Blog {
+.blog {
   height: 100%;
 }
 .blog-content {
     line-height: 1.5em;
 }
 
-.Blog-Intro {
-    font-family: Arvo-Italic;
+.blog-intro {
+    font-family: Arvo;
+    font-style: italic;
     font-size: 1.2em;
     line-height: 2em;
     color: #064b7b;
-    text-align: center;
 }
 
 .blog-header {
@@ -227,7 +237,7 @@ footer a {
   margin-top: -0.2em;
 }
 
-.Quote {
+.quote {
   display: inline-block;
   font-size: 1.5em;
   margin: 0.2em;
@@ -246,7 +256,8 @@ footer a {
 .author {
   font-size: 0.6em;
   color: #064b7b;
-  font-family: Arvo-Italic;
+  font-family: Arvo;
+  font-style: italic;
   display: inline;
 }
 
@@ -259,7 +270,7 @@ footer a {
   overflow: hidden;
 }
 
-.Intro {
+.intro {
   font-size: 1em;
   text-align: left;
   padding: 2em;
@@ -277,7 +288,7 @@ footer a {
   line-height: 2em;
 }
 
-.tile-socialmedia2 {
+.tile--socialmedia2 {
   margin: 1em;
 }
 
@@ -294,10 +305,14 @@ footer a {
   font-size: 1.3em;
 }
 
+.tile--socialmedia2 {
+    margin-top: -1em;
+}
 .text-content img {
   float: left;
   width: 12%;
   height: auto;
+  margin-top: 0;
 }
 
 .text-content li {
@@ -324,9 +339,13 @@ nav a:hover {
 .tabbed label {
   display: none;
 }
+
+
 /* =========================================*/
 /* =====Hier kommen die Mediaqueries =======*/
 /* =========================================*/
+
+
 
 /*Kleine Smartphones*/
 /****** MEDIA 450 ******/
@@ -336,7 +355,6 @@ nav a:hover {
   }
 
   /* List Styling */
-
   dd {
     padding: 0% 5%;
     width: 75%;
@@ -367,7 +385,7 @@ nav a:hover {
     width: 20em;
   }
 
-  .Titles {
+  .titles {
     margin-top: -15em;
   }
 
@@ -411,17 +429,16 @@ nav a:hover {
   /****** MEDIA 800 ******/
   /****** Tablets ******/
 
-  @media screen and (min-width: 800px) {
+  @media screen and (min-width: 650px) {
     /* Background-style-element */
-    .Blog {
+    .blog {
         display: grid;
         grid-gap: 4em;
-        grid-template-columns:10% 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 10% 1fr 1fr 1fr 1fr 1fr;
         grid-template-areas:
           "C A A A B B"
           "C A A A B B";
       }
-    }
     .withBackground:after {
       display: block;
       content: "";
@@ -429,7 +446,7 @@ nav a:hover {
       height: 25em;
       background-color: #e9f0f7;
       margin-top: -56em;
-      background-image: url(../img/Fahrradklein-lightblue.png);
+      background-image: url(img/icon-Fahrradklein-lightblue.png);
     }
 
     .wrapperA {
@@ -453,14 +470,6 @@ nav a:hover {
         ". G G G G .";
     }
 
-    .wrapperC {
-      clear: both;
-      display: grid;
-      grid-gap: 2em;
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-      grid-template-areas: "A A A B B B";
-    }
-
     .blog-content {
         grid-area:  A;
     }
@@ -469,7 +478,7 @@ nav a:hover {
         grid-area: B;
     }
 
-    .Blog > a {
+    .blog > a {
         grid-area: C;
         margin-left: -3em;
         padding-left: 3em;
@@ -485,12 +494,12 @@ nav a:hover {
       grid-area: B;
     }
 
-    .Titles {
+    .titles {
       margin-top: -10em;
       grid-area: A;
     }
 
-    .Intro {
+    .intro {
       grid-area: C;
     }
 
@@ -509,39 +518,39 @@ nav a:hover {
       width: 66%;
     }
 
-    .tile-zwift-2 {
+    .tile--zwift-2 {
       grid-area: A;
     }
 
-    .tile-zwift-3 {
+    .tile--zwift-3 {
       grid-area: B;
     }
 
-    .tile-EM {
+    .tile--ibiza {
       grid-area: B;
     }
 
-    .tile-WM {
+    .tile--WM {
       grid-area: C;
     }
 
-    .tile-kanal {
+    .tile--kanal {
       grid-area: A;
     }
 
-    .tile-x {
+    .tile--kropp {
       grid-area: D;
     }
 
-    .tile-y {
+    .tile--EM {
       grid-area: E;
     }
 
-    .tile-logo {
+    .tile--logo {
       grid-area: A;
     }
 
-    .tile-socialmedia {
+    .tile--socialmedia {
       grid-area: B;
     }
 
@@ -554,7 +563,7 @@ nav a:hover {
       text-align: center;
     }
 
-    .tile-socialmedia2 {
+    .tile--socialmedia2 {
       grid-area: C;
     }
 
@@ -562,7 +571,7 @@ nav a:hover {
       grid-area: A;
     }
 
-    .Quote {
+    .quote {
       grid-area: C;
     }
   }
@@ -642,13 +651,21 @@ https://codepen.io/ekscentrysytet/pen/QbNdEB  */
       background-color: #e9f0f7;
     }
 
-    .Quote {
+    .wrapperC {
+        clear: both;
+        display: grid;
+        grid-gap: 2em;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: "A A A B B B";
+      }
+
+    .quote {
       font-size: 2.5em;
       margin: 0.3em;
       padding: 0.5em;
     }
-    .Titles {
-      margin-top: -15em;
+    .titles {
+      margin-top: -12em;
     }
     .about {
       margin-left: -7em;
