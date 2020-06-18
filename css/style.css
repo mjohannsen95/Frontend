@@ -329,15 +329,23 @@ a:hover {
   background: linear-gradient(90deg, #e9f0f7 5px, transparent);
 }
 
-nav a:hover {
-  color: #cd1719;
+nav a:hover, nav a #main {
+    background: transparent;
+  border-bottom: 0.2em dashed #cd1719;
 }
+
+
 .tabbed input {
   display: none;
 }
 
 .tabbed label {
   display: none;
+}
+
+#current {
+    background: transparent;
+    border-bottom: 0.2em dashed #e9f0f7 ;
 }
 
 
@@ -401,8 +409,7 @@ nav a:hover {
     nav a {
       font-size: 1em;
       background-color: none;
-      padding: 1em;
-      margin: 1em;
+      margin: 0.8em;
     }
 
     nav {
@@ -801,4 +808,4 @@ https://codepen.io/ekscentrysytet/pen/QbNdEB  */
       /* Safari, Android, iOS */ url("fonts/arvo-v13-latin-italic.svg#Arvo")
         format("svg"); /* Legacy iOS */
   }
-
+}
