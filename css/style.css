@@ -228,7 +228,6 @@ footer a {
 }
 
 .blog-gallery :nth-child(2){
-    margin-top: 2em;
     border-bottom-color: #cd1719;
 
 }
@@ -456,11 +455,12 @@ nav a:hover, nav a #main {
     .blog {
         display: grid;
         grid-gap: 4em;
-        grid-template-columns: 10% 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-areas:
-          "C A A A B B"
-          "C A A A B B";
-      }
+          "A A A A A A"
+          "B B B B B B"
+          "C C C . . .";
+      }‚
     .withBackground:after {
       display: block;
       content: "";
@@ -497,15 +497,18 @@ nav a:hover, nav a #main {
     }
 
     .blog-gallery {
-        grid-area: B;
+      grid-area: B;
+      margin-top: 0;
+    }
+
+    .blog-gallery img {
+      margin-top: 0;
+      float:left;
+      width: 33%;
     }
 
     .blog > a {
-        grid-area: C;
-        margin-left: -3em;
-        padding-left: 3em;
-        padding-top: 3em;
-        margin-top: -3em;
+      grid-area: C;
     }
 
     dl {
@@ -676,6 +679,38 @@ https://codepen.io/ekscentrysytet/pen/QbNdEB  */
       padding: 2em;
       background-color: #e9f0f7;
     }
+
+    .blog {
+      display: grid;
+      grid-gap: 4em;
+      grid-template-columns: 10% 1fr 1fr 1fr 1fr 1fr;
+      grid-template-areas:
+        "C A A A B B"
+        "C A A A B B";
+    }
+
+    .blog-content {
+      grid-area:  A;
+    }
+
+    .blog-gallery {
+        grid-area: B;
+    }
+
+    .blog-gallery img {
+      clear: both;
+      width: 100%;
+      margin-top: 3em;
+    }
+
+  .blog > a {
+      grid-area: C;
+      margin-left: -3em;
+      padding-left: 3em;
+      padding-top: 3em;
+      margin-top: -3em;
+  }
+
     .header > img {
       background-color: transparent;
     }
