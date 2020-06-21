@@ -354,6 +354,21 @@ nav a:hover, nav a #main {
     border-bottom: 0.2em dashed #e9f0f7 ;
 }
 
+/*Für die Doku */
+.img-doku {
+  float: left;
+  width: 25%;
+  margin: 2%;
+}
+
+.img-doku + h2, 
+.img-doku + h3, 
+.img-doku + h4,
+.img-doku + a 
+{
+  clear: both;
+  display: block;
+}
 
 /* =========================================*/
 /* =====Hier kommen die Mediaqueries =======*/
