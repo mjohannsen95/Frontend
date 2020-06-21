@@ -254,8 +254,8 @@ footer a {
   border-left: 0.15em solid #cd1719;
 }
 
-.titles + *, 
-footer  {
+.titles + *,
+.quote + *  {
   clear: both;
 }
 
