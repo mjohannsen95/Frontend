@@ -355,20 +355,65 @@ nav a:hover, nav a #main {
 }
 
 /*Für die Doku */
+.doku {
+    margin: 5em;
+}
+
 .img-doku {
   float: left;
-  width: 25%;
+  width: 27%;
   margin: 2%;
 }
 
-.img-doku + h2, 
-.img-doku + h3, 
-.img-doku + h4,
-.img-doku + a 
+.img-doku--single {
+  float: left;
+  width: 66%;
+  margin: 2%;
+  margin-top: 0;
+}
+
+.img-doku ~ h2,  
+.img-doku ~ a 
 {
   clear: both;
-  display: block;
 }
+
+.img-doku--single ~ h2,
+.img-doku--single ~ .quote-doku {
+  clear: both;
+}
+
+.ul-doku {
+  list-style-type: square;
+  list-style-position: inside;
+}
+
+.quote-doku {
+  font-size: 1em;
+  margin-bottom: 2em;
+  margin: 1em;
+  padding: 0.7em;
+  position: relative;
+  border-right: 0.15em solid #cd1719;
+  border-left: 0.15em solid #064b7b;
+}
+
+.quotes-container + * {
+  clear: both;
+}
+
+.quotes-container .quote-doku{
+  float: left;
+  width: 27%;
+  height: 100%;
+}
+
+.quote-doku:hover {
+  border-right: 0.15em solid #064b7b;
+  border-left: 0.15em solid #cd1719;
+}
+
+
 
 /* =========================================*/
 /* =====Hier kommen die Mediaqueries =======*/
