@@ -354,33 +354,13 @@ nav a:hover, nav a #main {
     border-bottom: 0.2em dashed #e9f0f7 ;
 }
 
+
+
 /*Für die Doku */
+
+
 .doku {
-    margin: 5em;
-}
-
-.img-doku {
-  float: left;
-  width: 27%;
-  margin: 2%;
-}
-
-.img-doku--single {
-  float: left;
-  width: 66%;
-  margin: 2%;
-  margin-top: 0;
-}
-
-.img-doku ~ h2,  
-.img-doku ~ a 
-{
-  clear: both;
-}
-
-.img-doku--single ~ h2,
-.img-doku--single ~ .quote-doku {
-  clear: both;
+  margin: 5em;
 }
 
 .ul-doku {
@@ -398,21 +378,49 @@ nav a:hover, nav a #main {
   border-left: 0.15em solid #064b7b;
 }
 
-.quotes-container + * {
-  clear: both;
-}
-
-.quotes-container .quote-doku{
-  float: left;
-  width: 27%;
-  height: 100%;
-}
-
 .quote-doku:hover {
   border-right: 0.15em solid #064b7b;
   border-left: 0.15em solid #cd1719;
 }
 
+/* Media Query for documentation */
+@media screen and (min-width: 900px) {
+
+  .img-doku {
+    float: left;
+    width: 27%;
+    margin: 2%;
+  }
+
+  .img-doku--single {
+    float: left;
+    width: 66%;
+    margin: 2%;
+    margin-top: 0;
+  }
+
+  .img-doku ~ h2,  
+  .img-doku ~ a 
+  {
+    clear: both;
+  }
+
+  .img-doku--single ~ h2,
+  .img-doku--single ~ .quote-doku {
+    clear: both;
+  }
+
+  .quotes-container + * {
+    clear: both;
+  }
+
+  .quotes-container .quote-doku{
+    float: left;
+    width: 27%;
+    height: 100%;
+  }
+
+}
 
 
 /* =========================================*/
