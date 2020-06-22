@@ -155,7 +155,7 @@ dl > div {
 
 /* Footer Styling */
 footer {
-  background-image: url(img/footer_spitz.png);
+  background-image: url(img/footer-spitz.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -565,7 +565,7 @@ nav a:hover, footer a:hover, nav a .current {
 
     .withBackground:after {
       background-color: #e9f0f7;
-      background-image: url(img/icon-Fahrradklein-lightblue.png);
+      background-image: url(img/icon-fahrradklein-lightblue.png);
       content: "";
       display: block;
       height: 25em;
