@@ -446,7 +446,8 @@ nav a:hover, footer a:hover, nav a .current {
     width: 66%;
   }
 
-  .img-doku ~ h2,  
+  .img-doku ~ h2,
+  .img-doku ~ h3,  
   .img-doku ~ a 
   {
     clear: both;

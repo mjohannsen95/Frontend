@@ -1,0 +1,595 @@
+/* General Styling */
+body {
+    font-family: Roboto, sans-serif;
+    font-size: 1em;
+    margin: 0;
+  }
+  
+  /* Content Styling */
+  main {
+    height: 100%;
+    margin: 2em;
+  }
+  
+  p {
+    line-height: 1.3em;
+  }
+  
+  /* Headings Styling */
+  h1 {
+    color: #e9f0f7;
+    font-size: 2.2em;
+    text-transform: uppercase;
+    word-break: normal;
+  }
+  
+  h2 {
+    color: #cd1719;
+    font-size: 1.8em;
+  }
+  
+  h1,
+  h2,
+  h3,
+  q {
+    font-family: Arvo, sans-serif;
+  }
+  
+  
+  h4 {
+    color: #064b7b;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin-top: 2em;
+    margin: 0;
+    padding: 0;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  /* Link Styling */
+  a {
+    color: #cd1719;
+    font-family: Arvo, sans-serif;
+    padding: 0.5em;
+    text-decoration: none;
+  }
+  
+  /* Menu Styling */
+  nav {
+    background-color: #064a7b60;
+    height: auto;
+    margin-left: 1em;
+    margin: 0;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  nav ul {
+    display: flex;
+    flex-direction: row; 
+    padding-left: 1em;
+  }
+  
+  nav a {
+    color: white;
+    margin-left: 1em;
+    flex: 1;
+    font-family: Arvo, sans-serif;
+    font-size: 0.7em;
+    flex-wrap: wrap;
+  }
+  
+  /* Formular Styling */
+  form {
+    background-color: #e9f0f7;
+    border: 1px solid #e9f0f7;
+    padding: 1em;
+  }
+  
+  label {
+    float: left;
+    width: 12em;
+  }
+  
+  legend {
+    font-size: 1.5em;
+  }
+  
+  input {
+    border-bottom-color: #064b7b;
+    border-bottom-style: dashed;
+    border-left-style: none;
+    border-right-style: none;
+    border-top-style: none;
+    width: 13em;
+  }
+  
+  textarea {
+    border: 2px dashed #064b7b;
+    margin-top: 1em;
+    width: 13em;
+  }
+  
+  fieldset {
+    border: 0;
+    color: #064b7b;
+    font-family: Arvo, sans-serif;
+  }
+  
+  fieldset div,
+  fieldset legend {
+    margin-bottom: 1em;
+  }
+  
+  button {
+    background: #cd1719;
+    border: 0;
+    color: white;
+    font-style: bold;
+    padding: 1em;
+  }
+  
+  /* DL List Styling */
+  dl {
+  margin: 3em;
+  }
+  
+  dt {
+    color: #064b7b;
+    font-family: "Roboto-Bold", sans-serif;
+  }
+  
+  dl > div {
+    margin: 0.8em;
+  }
+  
+  /* Footer Styling */
+  footer {
+    background-image: url(img/footer_spitz.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 15em;
+    width: 100%;
+  }
+  
+  footer a {
+    color: white;
+    float: left;
+    font-size: 0.6em;
+    justify-content: center;
+    margin-top: 23em;
+  }
+  
+  /* Header Styling */
+  .header img {
+    display: block;
+    height: 500px;
+    margin: 0;
+    object-fit: cover;
+    object-position: 80% 20%;
+    width: 100%;
+    z-index: -100;
+  }
+  
+  /* Tiles Styling */
+  
+  .tile--preview {
+    margin-top: 2em;
+  }
+  .tile-heading {
+    background: #cd1719;
+    color: white;
+    font-family: Arvo;
+    font-size: 1.3em;
+    margin-top: -2em;
+    max-width: 36.2em;
+    padding: 0.5em;
+    position: relative;
+  }
+  
+  .tile--preview img {
+    margin-top: 2em; 
+  }
+  
+  /*Titles Styling - Überschneidungen im Header */
+  .titles {
+    margin-top: -10em;
+  }
+  
+  .subheader {
+    color: #cd1719;
+    font-size: 2em;
+  }
+  
+  .quote {
+    border-left: 0.15em solid #064b7b;
+    border-right: 0.15em solid #cd1719;
+    display: inline-block;
+    font-size: 1.5em;
+    margin-bottom: 2em;
+    margin: 1em;
+    padding: 0.7em;
+    position: relative;
+    width: 80%;
+  }
+  
+  .quote:hover {
+    border-left: 0.15em solid #cd1719;
+    border-right: 0.15em solid #064b7b;
+  }
+  
+  .titles + *,
+  .quote + *  {
+    clear: both;
+  }
+  
+  .author {
+    color: #064b7b;
+    display: inline;
+    font-family: Arvo;
+    font-size: 0.6em;
+    font-style: italic;
+  }
+  
+  
+  /* Content in Blog Articles Styling */
+  .blog {
+    height: 100%;
+  }
+  .blog-content {
+      line-height: 1.5em;
+  }
+  
+  .blog-intro {
+      color: #064b7b;
+      font-family: Arvo;
+      font-size: 1.2em;
+      font-style: italic;
+      line-height: 1.5em;
+  }
+  
+  .blog-header {
+      color: black;
+      line-height: 1em;
+    }
+  
+  .blog-gallery {
+      margin-top: 5em;
+  }
+  
+  .blog-gallery img {
+      border-bottom: 0.5em dashed #064b7b;
+      margin-top: 2em;
+  }
+  
+  .blog-gallery :nth-child(2){
+      border-bottom-color: #cd1719;
+  
+  }
+  
+  .visually-hidden {
+    height: 1px;
+    left: -10000px;
+    overflow: hidden;
+    position: absolute;
+    top: auto;
+    width: 1px;
+  }
+  
+  .intro {
+    background: white;
+    border-bottom: 0.3em dashed #064b7b;
+    font-family: Roboto;
+    font-size: 1em;
+    line-height: 1.5em;
+    padding: 2em;
+    text-align: center;
+  }
+  
+  .about {
+    border-left-color: #064b7b;
+    border-left-style: dashed;
+    border-left-width: 0.2em;
+    line-height: 2em;
+    padding-left: 2em;
+  }
+  
+  .tile--socialmedia2 {
+    margin: 1em;
+  }
+  
+  .form-heading {
+    display: block;
+    padding-top: 1em;
+  }
+  
+  .text-heading {
+    color: #064b7b;
+    font-family: Arvo;
+    font-size: 1.3em;
+    padding: 0.5em;
+    position: relative;
+  }
+  
+  .tile--socialmedia2 {
+      margin-top: -1em;
+  }
+  .text-content img {
+    float: left;
+    height: auto;
+    margin-top: 0;
+    width: 12%;
+  }
+  
+  .text-content li {
+    clear: both;
+    display: block;
+    padding: 0.8em;
+  }
+  
+  .text-content a {
+    margin-left: 2em;
+  }
+  /*Link Effekte*/
+  a:hover {
+    background: linear-gradient(90deg, #e9f0f7 5px, transparent);
+  }
+  
+  
+  nav a:hover, footer a:hover, nav a .current {
+    background: transparent;
+    border-bottom: 0.2em dashed #cd1719;
+  }
+  
+  
+
+  
+  
+  /* =========================================*/
+  /* =====Hier kommen die Mediaqueries =======*/
+  /* =========================================*/
+  
+  
+  
+  /*Kleine Smartphones*/
+  /****** MEDIA 450 ******/
+  @media screen and (min-width: 450px) {
+    h1 {
+      font-size: 3em;
+    }
+  
+    /* List Styling */
+    dd {
+      margin-left: 7em;
+      padding: 0% 5%;
+      width: 75%;
+    }
+  
+    dt {
+      color: #064b7b;
+      float: left;
+      font-family: "Roboto-Bold", sans-serif;
+      margin-top: 0;
+      padding: 0% 1%;
+      width: 20%;
+    }
+  
+    label {
+      width: 8em;
+    }
+  
+    input {
+      width: 20em;
+    }
+  
+    textarea {
+      width: 20em;
+    }
+  
+    .titles {
+      margin-top: -10em;
+    }
+  
+    .subheader {
+      font-size: 2em;
+      margin-top: -0.6em;
+      padding-left: 3em;
+    }
+  
+    /****** MEDIA 600 ******/
+  
+    @media screen and (min-width: 600px) {
+      nav a {
+        font-size: 1em;
+        margin-left: 3em;
+      }
+  
+      nav {
+        background-color: transparent;
+        padding-top: 2em;
+      }
+  
+      footer a {
+        color: white;
+        display: flex;
+        float: left;
+        font-size: 1em;
+        margin-left: 3em;
+        margin-top: 12em;
+      }
+  
+      .subheader {
+        font-size: 3em;
+      }
+    }
+
+  
+ 
+    
+  
+    /****** MEDIA 900 ******/
+    @media screen and (min-width: 900px) {
+      main {
+        margin: 3em;
+      }
+  
+      h1 {
+        color: black;
+      }
+  
+      dl {
+        background-color: #e9f0f7;
+        margin-top: 3em;
+        padding: 2em;
+      }
+  
+  
+      .header > img {
+        background-color: transparent;
+      }
+  
+      .quote {
+        font-size: 2.5em;
+        padding: 0.5em;
+      }
+      .titles {
+       margin-top: -15em;
+      }
+      .about {
+        margin-left: -10em;
+      }
+    }
+  
+    /****** MEDIA 1350 ******/
+    /****** Bigger Screens, laptops ******/
+    @media screen and (min-width: 1350px) {
+      h1 {
+        font-size: 5em;
+      }
+  
+      nav a {
+        color: white;
+        font-size: 1.5em;
+      }
+  
+      nav {
+        background-color: #064a7b9f;
+      }
+  
+      dl {
+        margin-left: 10em;
+      }
+  
+    }
+  
+      /****** MEDIA 2000 ******/
+    /****** Bigger Screens, Computers ******/
+    @media screen and (min-width: 2000px) {
+      
+      main {
+        margin-left: 10em;
+      }
+  
+    }
+  
+    /*==================*/
+    /*======FONTS=======*/
+    /*==================*/
+  
+    /* roboto-regular - latin */
+    @font-face {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      src: url("fonts/roboto-v20-latin-regular.eot"); /* IE9 Compat Modes */
+      src: local("Roboto"), local("Roboto-Regular"),
+        url("fonts/roboto-v20-latin-regular.eot?#iefix")
+          format("embedded-opentype"),
+        /* IE6-IE8 */ url("fonts/roboto-v20-latin-regular.woff2") format("woff2"),
+        /* Super Modern Browsers */ url("fonts/roboto-v20-latin-regular.woff")
+          format("woff"),
+        /* Modern Browsers */ url("fonts/roboto-v20-latin-regular.ttf")
+          format("truetype"),
+        /* Safari, Android, iOS */
+          url("fonts/roboto-v20-latin-regular.svg#Roboto") format("svg"); /* Legacy iOS */
+    }
+  
+    /* roboto-italic - latin */
+    @font-face {
+      font-family: "Roboto";
+      font-style: italic;
+      font-weight: 400;
+      src: url("fonts/roboto-v20-latin-italic.eot"); /* IE9 Compat Modes */
+      src: local("Roboto Italic"), local("Roboto-Italic"),
+        url("fonts/roboto-v20-latin-italic.eot?#iefix")
+          format("embedded-opentype"),
+        /* IE6-IE8 */ url("fonts/roboto-v20-latin-italic.woff2") format("woff2"),
+        /* Super Modern Browsers */ url("fonts/roboto-v20-latin-italic.woff")
+          format("woff"),
+        /* Modern Browsers */ url("fonts/roboto-v20-latin-italic.ttf")
+          format("truetype"),
+        /* Safari, Android, iOS */ url("fonts/roboto-v20-latin-italic.svg#Roboto")
+          format("svg"); /* Legacy iOS */
+    }
+  
+    /* roboto-700 - latin */
+    @font-face {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 700;
+      src: url("fonts/roboto-v20-latin-700.eot"); /* IE9 Compat Modes */
+      src: local("Roboto Bold"), local("Roboto-Bold"),
+        url("fonts/roboto-v20-latin-700.eot?#iefix") format("embedded-opentype"),
+        /* IE6-IE8 */ url("fonts/roboto-v20-latin-700.woff2") format("woff2"),
+        /* Super Modern Browsers */ url("fonts/roboto-v20-latin-700.woff")
+          format("woff"),
+        /* Modern Browsers */ url("fonts/roboto-v20-latin-700.ttf")
+          format("truetype"),
+        /* Safari, Android, iOS */ url("fonts/roboto-v20-latin-700.svg#Roboto")
+          format("svg"); /* Legacy iOS */
+    }
+  
+    @font-face {
+      font-family: "Arvo";
+      font-style: normal;
+      font-weight: 400;
+      src: url("fonts/arvo-v13-latin-regular.eot"); /* IE9 Compat Modes */
+      src: local("Arvo"),
+        url("fonts/arvo-v13-latin-regular.eot?#iefix") format("embedded-opentype"),
+        /* IE6-IE8 */ url("fonts/arvo-v13-latin-regular.woff2") format("woff2"),
+        /* Super Modern Browsers */ url("fonts/arvo-v13-latin-regular.woff")
+          format("woff"),
+        /* Modern Browsers */ url("fonts/arvo-v13-latin-regular.ttf")
+          format("truetype"),
+        /* Safari, Android, iOS */ url("fonts/arvo-v13-latin-regular.svg#Arvo")
+          format("svg"); /* Legacy iOS */
+    }
+  
+    /* arvo-italic - latin */
+    @font-face {
+      font-family: "Arvo";
+      font-style: italic;
+      font-weight: 400;
+      src: url("fonts/arvo-v13-latin-italic.eot"); /* IE9 Compat Modes */
+      src: local("Arvo-Italic"),
+        url("fonts/arvo-v13-latin-italic.eot?#iefix") format("embedded-opentype"),
+        /* IE6-IE8 */ url("fonts/arvo-v13-latin-italic.woff2") format("woff2"),
+        /* Super Modern Browsers */ url("fonts/arvo-v13-latin-italic.woff")
+          format("woff"),
+        /* Modern Browsers */ url("fonts/arvo-v13-latin-italic.ttf")
+          format("truetype"),
+        /* Safari, Android, iOS */ url("fonts/arvo-v13-latin-italic.svg#Arvo")
+          format("svg"); /* Legacy iOS */
+    }
+  }
+  
