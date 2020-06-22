@@ -3,6 +3,7 @@ body {
   font-family: Roboto, sans-serif;
   font-size: 1em;
   margin: 0;
+  background-color: aquamarine;
 }
 
 /* Content Styling */
@@ -35,9 +36,6 @@ q {
   font-family: Arvo, sans-serif;
 }
 
-q {
-  display: inline-block;
-}
 
 h4 {
   color: #064b7b;
@@ -221,7 +219,7 @@ footer a {
 .quote {
   border-left: 0.15em solid #064b7b;
   border-right: 0.15em solid #cd1719;
-  float: right;
+  display: inline-block;
   font-size: 1.5em;
   margin-bottom: 2em;
   margin: 1em;
