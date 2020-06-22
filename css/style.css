@@ -172,7 +172,7 @@ footer a {
 }
 
 /* Header Styling */
-.header img {
+header img {
   display: block;
   height: 500px;
   margin: 0;
@@ -549,7 +549,7 @@ nav a:hover, footer a:hover, nav a .current {
 
   @media screen and (min-width: 650px) {
     /* Background-style-element */
-    .header > img {
+    header > img {
       background-color: #064b7b;
     }
 
@@ -825,7 +825,7 @@ nav a:hover, footer a:hover, nav a .current {
       padding-top: 3em;
   }
 
-    .header > img {
+    header > img {
       background-color: transparent;
     }
 
