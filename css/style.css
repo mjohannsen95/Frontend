@@ -217,7 +217,7 @@ footer a {
 .quote {
   border-left: 0.15em solid #064b7b;
   border-right: 0.15em solid #cd1719;
-  float: right;
+  display: inline-block;
   font-size: 1.5em;
   margin-bottom: 2em;
   margin: 1em;
@@ -517,7 +517,7 @@ nav a:hover, footer a:hover, nav a .current {
     .header > img {
       background-color: #064b7b;
     }
-    
+
     .blog {
         display: grid;
         grid-gap: 4em;
@@ -609,8 +609,10 @@ nav a:hover, footer a:hover, nav a .current {
     }
 
     .disclaimer {
-      float: left;
-      width: 66%;
+     padding-top: 2em;
+     clear: both;
+     display: block;
+     width: 75%;
     }
 
     .tile--zwift-2 {
@@ -797,7 +799,7 @@ nav a:hover, footer a:hover, nav a .current {
       padding: 0.5em;
     }
     .titles {
-      margin-top: -12em;
+     margin-top: -15em;
     }
     .about {
       margin-left: -10em;
@@ -814,7 +816,6 @@ nav a:hover, footer a:hover, nav a .current {
     nav a {
       color: white;
       font-size: 1.5em;
-      -padding: 1em;
     }
 
     nav {
