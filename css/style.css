@@ -196,7 +196,6 @@ footer a {
   max-width: 36.2em;
   padding: 0.5em;
   position: relative;
-  word-wrap: break-word;
 }
 
 .tile--preview img {
@@ -371,7 +370,37 @@ nav a:hover, footer a:hover, nav a .current {
 
 /*Module ohne Grid*/
 
+.noGrid {
+  clear: both;
+  display: grid;
+  grid-gap: 2em;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "A A A A A A"
+    "B B B B B B"
+    "C C C C C C"
+    "D D D D D D"
+    "E E E E E E";
+}
 
+.modules-titles {
+  grid-area: A;
+}
+
+.modules-tile {
+  grid-area: B;
+}
+
+.modules-blog {
+  grid-area: C;
+}
+.modules-dl {
+  grid-area: D;
+}
+
+.modules-dl {
+  grid-area: E;
+}
 
 
 /* =========================================*/
