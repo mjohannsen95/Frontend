@@ -7,8 +7,8 @@ body {
 
 /* Content Styling */
 main {
-  margin: 2em;
   height: 100%;
+  margin: 2em;
 }
 
 p {
@@ -17,8 +17,8 @@ p {
 
 /* Headings Styling */
 h1 {
-  font-size: 2.2em;
   color: #e9f0f7;
+  font-size: 2.2em;
   text-transform: uppercase;
   word-break: normal;
 }
@@ -40,9 +40,9 @@ h4 {
 }
 ul {
   list-style-type: none;
-  padding: 0;
-  margin: 0;
   margin-top: 2em;
+  margin: 0;
+  padding: 0;
 }
 
 img {
@@ -61,31 +61,29 @@ a {
 /* Menu Styling */
 nav {
   background-color: #064a7b60;
-  z-index: 1000;
-  margin-left: 1em;
-  position: absolute;
-  margin: 0;
-  width: 100%;
   height: auto;
-  top: 0;
+  margin-left: 1em;
+  margin: 0;
   padding-left: 2em;
-  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 nav a {
-  font-family: Arvo, sans-serif;
   color: white;
-  font-size: 0.7em;
   float: left;
+  font-family: Arvo, sans-serif;
+  font-size: 0.7em;
   padding: 1em;
 }
 
 /* Formular Styling */
 form {
   background-color: #e9f0f7;
-  width: 100%; /* Breite */
-  padding: 1em;
   border: 1px solid #e9f0f7;
+  padding: 1em;
 }
 
 label {
@@ -98,36 +96,37 @@ legend {
 }
 
 input {
-  width: 13em;
   border-bottom-color: #064b7b;
   border-bottom-style: dashed;
-  border-top-style: none;
-  border-right-style: none;
   border-left-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  width: 13em;
 }
 
 textarea {
-  width: 13em;
   border: 2px dashed #064b7b;
   margin-top: 1em;
+  width: 13em;
 }
 
 fieldset {
-  font-family: Arvo, sans-serif;
-  color: #064b7b;
   border: 0;
+  color: #064b7b;
+  font-family: Arvo, sans-serif;
 }
 
-fieldset > * {
+fieldset div,
+fieldset legend {
   margin-bottom: 1em;
 }
 
 button {
   background: #cd1719;
+  border: 0;
   color: white;
-  border: 0em;
+  font-style: bold;
   padding: 1em;
-  font-weight: 700;
 }
 
 /* DL List Styling */
@@ -140,36 +139,36 @@ dt {
   font-family: "Roboto-Bold", sans-serif;
 }
 
-dl > * {
+dl > div {
   margin: 0.8em;
 }
 
 /* Footer Styling */
 footer {
   background-image: url(img/footer_spitz.png);
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
   height: 15em;
   width: 100%;
 }
 
 footer a {
-  float: left;
-  margin-top: 23em;
-  justify-content: center;
   color: white;
+  float: left;
   font-size: 0.6em;
+  justify-content: center;
+  margin-top: 23em;
 }
 
 /* Header Styling */
 .header img {
-  width: 100%;
+  display: block;
   height: 500px;
+  margin: 0;
   object-fit: cover;
   object-position: 80% 20%;
-  display: block;
-  margin: 0;
+  width: 100%;
   z-index: -100;
 }
 .tile--preview img {
@@ -183,14 +182,14 @@ footer a {
   margin-top: 2em;
 }
 .tile-heading {
-  margin-top: -2em;
-  position: relative;
-  padding: 0.5em;
   background: #cd1719;
   color: white;
   font-family: Arvo;
   font-size: 1.3em;
+  margin-top: -2em;
   max-width: 36.2em;
+  padding: 0.5em;
+  position: relative;
 }
 
 .titles {
@@ -206,11 +205,11 @@ footer a {
 }
 
 .blog-intro {
-    font-family: Arvo;
-    font-style: italic;
-    font-size: 1.2em;
-    line-height: 1.5em;
     color: #064b7b;
+    font-family: Arvo;
+    font-size: 1.2em;
+    font-style: italic;
+    line-height: 1.5em;
 }
 
 .blog-header {
@@ -223,8 +222,8 @@ footer a {
 }
 
 .blog-gallery img {
-    margin-top: 2em;
     border-bottom: 0.5em dashed #064b7b;
+    margin-top: 2em;
 }
 
 .blog-gallery :nth-child(2){
@@ -238,20 +237,20 @@ footer a {
 }
 
 .quote {
+  border-left: 0.15em solid #064b7b;
+  border-right: 0.15em solid #cd1719;
+  float: right;
   font-size: 1.5em;
   margin-bottom: 2em;
   margin: 1em;
   padding: 0.7em;
   position: relative;
-  border-right: 0.15em solid #cd1719;
-  border-left: 0.15em solid #064b7b;
-  float: right;
   width: 80%;
 }
 
 .quote:hover {
-  border-right: 0.15em solid #064b7b;
   border-left: 0.15em solid #cd1719;
+  border-right: 0.15em solid #064b7b;
 }
 
 .titles + *,
@@ -260,38 +259,37 @@ footer a {
 }
 
 .author {
-  font-size: 0.6em;
   color: #064b7b;
-  font-family: Arvo;
-  font-style: italic;
   display: inline;
+  font-family: Arvo;
+  font-size: 0.6em;
+  font-style: italic;
 }
 
 .visually-hidden {
-  position: absolute;
+  height: 1px;
   left: -10000px;
+  overflow: hidden;
+  position: absolute;
   top: auto;
   width: 1px;
-  height: 1px;
-  overflow: hidden;
 }
 
 .intro {
-  font-size: 1em;
-  text-align: left;
-  padding: 2em;
-  text-align: center;
-  line-height: 1.5em;
-  font-family: Roboto;
   background: white;
   border-bottom: 0.3em dashed #064b7b;
+  font-family: Roboto;
+  font-size: 1em;
+  line-height: 1.5em;
+  padding: 2em;
+  text-align: center;
 }
 .about {
+  border-left-color: #064b7b;
   border-left-style: dashed;
   border-left-width: 0.2em;
-  border-left-color: #064b7b;
-  padding-left: 2em;
   line-height: 2em;
+  padding-left: 2em;
 }
 
 .tile--socialmedia2 {
@@ -299,16 +297,16 @@ footer a {
 }
 
 .form-heading {
-  padding-top: 1em;
   display: block;
+  padding-top: 1em;
 }
 
 .text-heading {
-  position: relative;
-  padding: 0.5em;
   color: #064b7b;
   font-family: Arvo;
   font-size: 1.3em;
+  padding: 0.5em;
+  position: relative;
 }
 
 .tile--socialmedia2 {
@@ -316,9 +314,9 @@ footer a {
 }
 .text-content img {
   float: left;
-  width: 12%;
   height: auto;
   margin-top: 0;
+  width: 12%;
 }
 
 .text-content li {
@@ -335,12 +333,6 @@ a:hover {
   background: linear-gradient(90deg, #e9f0f7 5px, transparent);
 }
 
-nav a:hover, nav a #main {
-    background: transparent;
-  border-bottom: 0.2em dashed #cd1719;
-}
-
-
 .tabbed input {
   display: none;
 }
@@ -349,14 +341,22 @@ nav a:hover, nav a #main {
   display: none;
 }
 
-#current {
+nav a:hover, footer a:hover, nav a .current {
+  background: transparent;
+  border-bottom: 0.2em dashed #cd1719;
+}
+
+/*für aktuelle Seite */
+.current {
     background: transparent;
-    border-bottom: 0.2em dashed #e9f0f7 ;
+    border-bottom: 0.2em dashed #e9f0f7;
 }
 
 
 
-/*Für die Doku */
+/* =========================================*/
+/* =====Zusätzliches Doku Styling=======*/
+/* =========================================*/
 
 
 .doku {
@@ -364,60 +364,49 @@ nav a:hover, nav a #main {
 }
 
 .ul-doku {
-  list-style-type: square;
   list-style-position: inside;
+  list-style-type: square;
 }
 
 .quote-doku {
-  font-size: 1em;
+  border-left: 0.15em solid #064b7b;
+  border-right: 0.15em solid #cd1719;
   margin-bottom: 2em;
   margin: 1em;
   padding: 0.7em;
   position: relative;
-  border-right: 0.15em solid #cd1719;
-  border-left: 0.15em solid #064b7b;
 }
 
 .quote-doku:hover {
-  border-right: 0.15em solid #064b7b;
   border-left: 0.15em solid #cd1719;
+  border-right: 0.15em solid #064b7b;
 }
 
 /* Media Query for documentation */
 @media screen and (min-width: 900px) {
-
   .img-doku {
     float: left;
-    width: 27%;
     margin: 2%;
+    width: 27%;
   }
 
   .img-doku--single {
     float: left;
-    width: 66%;
-    margin: 2%;
     margin-top: 0;
+    margin: 2%;
+    width: 66%;
   }
 
   .img-doku ~ h2,  
   .img-doku ~ a 
   {
     clear: both;
+    display: block;
   }
 
   .img-doku--single ~ h2,
   .img-doku--single ~ .quote-doku {
     clear: both;
-  }
-
-  .quotes-container + * {
-    clear: both;
-  }
-
-  .quotes-container .quote-doku{
-    float: left;
-    width: 27%;
-    height: 100%;
   }
 
 }
@@ -438,22 +427,18 @@ nav a:hover, nav a #main {
 
   /* List Styling */
   dd {
-    margin-inline-start: 7em;
+    margin-left: 7em;
     padding: 0% 5%;
     width: 75%;
   }
 
   dt {
-    float: left;
-    padding: 0 1%;
-    width: 20%;
-    margin-top: 0;
     color: #064b7b;
+    float: left;
     font-family: "Roboto-Bold", sans-serif;
-  }
-
-  dl > * {
-    margin: 0.8em;
+    margin-top: 0;
+    padding: 0% 1%;
+    width: 20%;
   }
 
   label {
@@ -474,8 +459,8 @@ nav a:hover, nav a #main {
 
   .subheader {
     font-size: 2em;
-    padding-left: 3em;
     margin-top: -0.6em;
+    padding-left: 3em;
   }
 
   /****** MEDIA 600 ******/
@@ -483,28 +468,27 @@ nav a:hover, nav a #main {
   @media screen and (min-width: 600px) {
     nav a {
       font-size: 1em;
-      background-color: none;
       margin: 0.8em;
     }
 
     nav {
-      padding-left: 5em;
       background-color: transparent;
+      padding-left: 5em;
     }
 
     footer a {
+      color: white;
       display: flex;
       float: left;
-      margin-top: 12em;
-      margin-left: 3em;
-      color: white;
       font-size: 1em;
+      margin-left: 3em;
+      margin-top: 12em;
     }
 
     .subheader {
       font-size: 3em;
-      padding-left: 3em;
       margin-top: -0.6em;
+      padding-left: 3em;
     }
 
     .titles {
@@ -528,15 +512,16 @@ nav a:hover, nav a #main {
           "A A A A A A"
           "B B B B B B"
           "C C C . . .";
-      }‚
+      }
+
     .withBackground:after {
-      display: block;
-      content: "";
-      width: 100%;
-      height: 25em;
       background-color: #e9f0f7;
-      margin-top: -56em;
       background-image: url(img/icon-Fahrradklein-lightblue.png);
+      content: "";
+      display: block;
+      height: 25em;
+      margin-top: -56em;
+      width: 100%;
     }
 
     .wrapperA {
@@ -570,8 +555,8 @@ nav a:hover, nav a #main {
     }
 
     .blog-gallery img {
-      margin-top: 0;
       float:left;
+      margin-top: 0;
       width: 33%;
     }
 
@@ -690,11 +675,11 @@ https://codepen.io/ekscentrysytet/pen/QbNdEB  */
     }
 
     .tabbed label {
-      display: inline-block;
-      padding: 0.5em 0.7em;
       color: #064b7b;
+      display: inline-block;
       font-family: Arvo;
       font-size: 2em;
+      padding: 0.5em 0.7em;
     }
 
     .tabbed label:hover {
@@ -702,27 +687,27 @@ https://codepen.io/ekscentrysytet/pen/QbNdEB  */
     }
 
     .tabbed input:checked + label {
-      position: relative;
-      color: #cd1719;
       background: #fff;
       border-bottom: 0.2em dashed #064b7b;
+      color: #cd1719;
+      position: relative;
     }
     .tabbed input:checked + label:after {
-      display: block;
-      content: "";
-      position: absolute;
-      top: 0;
-      right: 0;
       bottom: 0;
+      content: "";
+      display: block;
       left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
     }
 
     .tab-reports,
     .tab-coming {
-      display: none;
-      padding: 2em;
-      padding-top: 7em;
       border: 0.2em solid #e9f0f7;
+      display: none;
+      padding-top: 7em;
+      padding: 2em;
     }
 
     #tab-coming:checked ~ .tab-coming,
@@ -743,9 +728,9 @@ https://codepen.io/ekscentrysytet/pen/QbNdEB  */
     }
 
     dl {
+      background-color: #e9f0f7;
       margin-top: 3em;
       padding: 2em;
-      background-color: #e9f0f7;
     }
 
     .blog {
@@ -767,16 +752,16 @@ https://codepen.io/ekscentrysytet/pen/QbNdEB  */
 
     .blog-gallery img {
       clear: both;
-      width: 100%;
       margin-top: 3em;
+      width: 100%;
     }
 
   .blog > a {
       grid-area: C;
       margin-left: -3em;
+      margin-top: -3em;
       padding-left: 3em;
       padding-top: 3em;
-      margin-top: -3em;
   }
 
     .header > img {
@@ -786,8 +771,8 @@ https://codepen.io/ekscentrysytet/pen/QbNdEB  */
         clear: both;
         display: grid;
         grid-gap: 2em;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-areas: "A A A A B B";
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
       }
 
     .quote {
@@ -807,12 +792,10 @@ https://codepen.io/ekscentrysytet/pen/QbNdEB  */
   @media screen and (min-width: 1350px) {
     h1 {
       font-size: 5em;
-      color: black;
     }
 
     nav a {
       color: white;
-      font-family: Arvo;
       font-size: 1.5em;
       padding: 1em;
     }
@@ -838,8 +821,8 @@ https://codepen.io/ekscentrysytet/pen/QbNdEB  */
     }
 
     .withBackground:after {
-      margin-top: -70em;
       height: 30em;
+      margin-top: -70em;
     }
 
     .about {
