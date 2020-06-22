@@ -38,6 +38,7 @@ q {
 h4 {
   color: #064b7b;
 }
+
 ul {
   list-style-type: none;
   margin-top: 2em;
@@ -47,7 +48,6 @@ ul {
 
 img {
   max-width: 100%;
-
 }
 
 /* Link Styling */
@@ -64,19 +64,28 @@ nav {
   height: auto;
   margin-left: 1em;
   margin: 0;
-  padding-left: 2em;
+  padding-bottom: 1em;
+  padding-top: 1em;
   position: absolute;
   top: 0;
   width: 100%;
   z-index: 1000;
 }
 
+nav ul {
+  display: flex;
+  flex-direction: row; 
+  padding-left: 1em;
+}
+
 nav a {
   color: white;
-  float: left;
+  margin-left: 1em;
+  /*float: left;*/
+  flex: 1;
   font-family: Arvo, sans-serif;
   font-size: 0.7em;
-  padding: 1em;
+  flex-wrap: wrap;
 }
 
 /* Formular Styling */
@@ -171,13 +180,9 @@ footer a {
   width: 100%;
   z-index: -100;
 }
-.tile--preview img {
-  margin-top: 2em; 
-}
-.tile--preview img:hover {
-    transform: skewX(-3deg);
-}
-/* Tile Styling */
+
+/* Tiles Styling */
+
 .tile--preview {
   margin-top: 2em;
 }
@@ -192,43 +197,16 @@ footer a {
   position: relative;
 }
 
+.tile--preview img {
+  margin-top: 2em; 
+}
+.tile--preview img:hover {
+    transform: skewX(-3deg);
+}
+
+/*Titles Styling - Überschneidungen im Header */
 .titles {
   margin-top: -10em;
-}
-
-/* Content in Blog Articles Styling */
-.blog {
-  height: 100%;
-}
-.blog-content {
-    line-height: 1.5em;
-}
-
-.blog-intro {
-    color: #064b7b;
-    font-family: Arvo;
-    font-size: 1.2em;
-    font-style: italic;
-    line-height: 1.5em;
-}
-
-.blog-header {
-    color: black;
-    line-height: 1em;
-  }
-
-.blog-gallery {
-    margin-top: 5em;
-}
-
-.blog-gallery img {
-    border-bottom: 0.5em dashed #064b7b;
-    margin-top: 2em;
-}
-
-.blog-gallery :nth-child(2){
-    border-bottom-color: #cd1719;
-
 }
 
 .subheader {
@@ -266,6 +244,42 @@ footer a {
   font-style: italic;
 }
 
+
+/* Content in Blog Articles Styling */
+.blog {
+  height: 100%;
+}
+.blog-content {
+    line-height: 1.5em;
+}
+
+.blog-intro {
+    color: #064b7b;
+    font-family: Arvo;
+    font-size: 1.2em;
+    font-style: italic;
+    line-height: 1.5em;
+}
+
+.blog-header {
+    color: black;
+    line-height: 1em;
+  }
+
+.blog-gallery {
+    margin-top: 5em;
+}
+
+.blog-gallery img {
+    border-bottom: 0.5em dashed #064b7b;
+    margin-top: 2em;
+}
+
+.blog-gallery :nth-child(2){
+    border-bottom-color: #cd1719;
+
+}
+
 .visually-hidden {
   height: 1px;
   left: -10000px;
@@ -284,6 +298,7 @@ footer a {
   padding: 2em;
   text-align: center;
 }
+
 .about {
   border-left-color: #064b7b;
   border-left-style: dashed;
@@ -468,12 +483,12 @@ nav a:hover, footer a:hover, nav a .current {
   @media screen and (min-width: 600px) {
     nav a {
       font-size: 1em;
-      margin: 0.8em;
+      margin-left: 3em;
     }
 
     nav {
       background-color: transparent;
-      padding-left: 5em;
+      padding-top: 2em;
     }
 
     footer a {
@@ -487,8 +502,6 @@ nav a:hover, footer a:hover, nav a .current {
 
     .subheader {
       font-size: 3em;
-      margin-top: -0.6em;
-      padding-left: 3em;
     }
 
     .titles {
@@ -504,6 +517,7 @@ nav a:hover, footer a:hover, nav a .current {
     .header > img {
       background-color: #064b7b;
     }
+    
     .blog {
         display: grid;
         grid-gap: 4em;
@@ -658,9 +672,11 @@ nav a:hover, footer a:hover, nav a .current {
   }
   /****** MEDIA 700 ******/
   @media screen and (min-width: 700px) {
+
+
     /*===Tabs im Racing===*/
     /*Auf folgender Quelle aufgebaut: 
-https://codepen.io/ekscentrysytet/pen/QbNdEB  */
+    https://codepen.io/ekscentrysytet/pen/QbNdEB  */
 
 
     .tabbed {
@@ -733,6 +749,14 @@ https://codepen.io/ekscentrysytet/pen/QbNdEB  */
       padding: 2em;
     }
 
+    .wrapperC {
+      clear: both;
+      display: grid;
+      grid-gap: 2em;
+      grid-template-areas: "A A A A B B";
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
     .blog {
       display: grid;
       grid-gap: 4em;
@@ -767,13 +791,6 @@ https://codepen.io/ekscentrysytet/pen/QbNdEB  */
     .header > img {
       background-color: transparent;
     }
-    .wrapperC {
-        clear: both;
-        display: grid;
-        grid-gap: 2em;
-        grid-template-areas: "A A A A B B";
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-      }
 
     .quote {
       font-size: 2.5em;
@@ -797,7 +814,7 @@ https://codepen.io/ekscentrysytet/pen/QbNdEB  */
     nav a {
       color: white;
       font-size: 1.5em;
-      padding: 1em;
+      -padding: 1em;
     }
 
     nav {
@@ -816,6 +833,7 @@ https://codepen.io/ekscentrysytet/pen/QbNdEB  */
     /****** MEDIA 2000 ******/
   /****** Bigger Screens, Computers ******/
   @media screen and (min-width: 2000px) {
+    
     main {
       margin-left: 10em;
     }
@@ -852,6 +870,7 @@ https://codepen.io/ekscentrysytet/pen/QbNdEB  */
       /* Safari, Android, iOS */
         url("fonts/roboto-v20-latin-regular.svg#Roboto") format("svg"); /* Legacy iOS */
   }
+
   /* roboto-italic - latin */
   @font-face {
     font-family: "Roboto";
@@ -869,6 +888,7 @@ https://codepen.io/ekscentrysytet/pen/QbNdEB  */
       /* Safari, Android, iOS */ url("fonts/roboto-v20-latin-italic.svg#Roboto")
         format("svg"); /* Legacy iOS */
   }
+
   /* roboto-700 - latin */
   @font-face {
     font-family: "Roboto";
